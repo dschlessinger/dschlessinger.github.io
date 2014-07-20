@@ -1,6 +1,6 @@
 .center {
 	text-align: center;
-	}
+}
 
 header {
 	background-color: #00CC00;
@@ -10,7 +10,7 @@ header {
 	border-style: solid;
 	border-width: 10px;
 	padding: 10px 10px 10px 10px;
-	}
+}
 
 sidebar {
 	float: left;
@@ -21,14 +21,14 @@ sidebar {
 	background-color: #00CC00;
 	border-style: solid;
 	border-width: 10px;
-	}
+}
 
 figure {
 	float: right;
 	padding: 10px 10px 10px 10px;
 	border-style: solid;
 	border-width: 10px;	
-	}
+}
 
 
 
