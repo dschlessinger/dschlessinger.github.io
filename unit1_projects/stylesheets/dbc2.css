@@ -10,6 +10,8 @@ header {
 	margin-right: auto;
 	border-style: solid;
 	border-width: 10px;
+	padding: 10px 10px 10px 10px;
+
 	}
 
 sidebar {
@@ -17,7 +19,6 @@ sidebar {
 	margin-top: 100px;
 	margin-right: 100 px;
 	width: 200 px;
-	height: 500px;
 	padding: 10px 10px 10px 10px;
 	background-color: #00CC00;
 	border-style: solid;
