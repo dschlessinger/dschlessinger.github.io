@@ -15,10 +15,21 @@ header {
 sidebar {
 	float: left;
 	margin-top: 100px;
-	margin-left: 100 px;
+	margin-left: 100px;
 	width: 200 px;
 	padding: 10px 10px 10px 10px;
 	background-color: #00CC00;
 	border-style: solid;
 	border-width: 10px;
 	}
+
+figure {
+	float: right;
+	margin-right: 100px;
+	padding: 10px 10px 10px 10px;
+	border-style: solid;
+	border-width: 10px;	
+	}
+
+
+
