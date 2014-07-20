@@ -5,6 +5,7 @@
 header {
 	background-color: #00CC00;
 	width: 700px;
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	border-style: solid;
@@ -14,7 +15,7 @@ header {
 
 sidebar {
 	float: left;
-	margin-left: 100px;
+	margin-left: 50px;
 	margin-top: 100px;
 	width: 200px;
 	padding: 10px 10px 10px 10px;
@@ -26,7 +27,8 @@ sidebar {
 figure {
 	float: right;
 	margin-top: 100px;
-	margin-right: 100px;
+	margin-right: 50px;
+	width: 300px;
 	padding: 10px 10px 10px 10px;
 	background-color: #00CC00;
 	padding: 10px 10px 10px 10px;
