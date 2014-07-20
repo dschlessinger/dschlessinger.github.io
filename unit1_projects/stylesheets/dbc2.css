@@ -21,7 +21,7 @@ sidebar {
 	background-color: #00CC00;
 	border-style: solid;
 	border-width: 10px;
-	clear: both;
+	clear: left;
 	}
 
 figure {
