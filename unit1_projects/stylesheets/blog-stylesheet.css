@@ -8,6 +8,7 @@
 	}
 
 header {
+	position: fixed;
 	background-color: #3399FF;
 	width: 90%;
 	height: 15%;
@@ -20,6 +21,7 @@ header {
 	}
 
 .nav {
+	position: fixed;
 	width: 100%;
 	float: left;
 	margin: 0 0 3em 0;
