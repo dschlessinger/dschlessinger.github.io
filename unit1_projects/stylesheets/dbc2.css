@@ -24,6 +24,14 @@ sidebar {
 	border-width: 10px;
 	}
 
+content {
+	margin: auto;
+	float: right;
+	right: 0px;
+	display: inline-block;
+	position: absolute;
+	}
+
 figure {
 	float: right;
 	margin-top: 50px;
