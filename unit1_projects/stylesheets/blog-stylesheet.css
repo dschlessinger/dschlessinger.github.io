@@ -32,7 +32,7 @@ header {
 
 .nav li a {
 	display: block;
-	padding: 30px 120px;
+	padding: 0px 120px;
 	text-decoration: none;
 	font-weight: bold;
 	}
