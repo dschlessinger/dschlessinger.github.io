@@ -30,8 +30,8 @@ sidebar {
 
 content {
 	margin-left: 100px;
+	width: 500px;
 	display: inline-block;
-	position: absolute;
 	}
 
 figure {
