@@ -70,5 +70,9 @@ footer {
 	width: 200px;
 	padding: 0;
 	margin: 0;
+	}
+
+.social li {
+	float: left;
 	list-style-type: none;
 	}
