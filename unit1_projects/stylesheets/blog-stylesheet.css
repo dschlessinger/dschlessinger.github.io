@@ -10,36 +10,35 @@
 header {
 	background-color: #3399FF;
 	width: 100%;
-	margin-top: 50px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
 	border-style: solid;
 	border-width: 5px;
 	padding: 10px 10px 10px 10px;
 	}
 
 .nav {
-	text-decoration: none;
-    text-align: center;
-	width: 1000px;
-	margin: 0 auto
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
 	}
 
 content {
-	width: 1000px;
-	margin-top: 200px;
-	margin-right: 50px;
-	margin-left: 50px;
+	width: 100%;
+	margin-top: 10%;
+	margin-right: 5%;
+	margin-left: 5%;
 	display: inline-block;
 	}
 
 footer {
 	text-align: center;
-	background-color: #00CC00;
-	width: 700px;
-	margin-bottom: 50px;
-	margin-left: auto;
-	margin-right: auto;
+	background-color: #3399FF;
+	width: 100%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
 	border-style: solid;
 	border-width: 5px;
 	padding: 10px 10px 10px 10px;
