@@ -76,3 +76,8 @@ footer {
 	float: left;
 	list-style-type: none;
 	}
+
+.social li a {
+	display: block;
+	padding: 0px 120px;
+	}
