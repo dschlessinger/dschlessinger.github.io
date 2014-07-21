@@ -64,3 +64,11 @@ footer {
 	padding: 10px 10px 10px 10px;
 	}
 
+.social {
+	position: relative;
+	height: 50px;
+	width: 200px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	}
