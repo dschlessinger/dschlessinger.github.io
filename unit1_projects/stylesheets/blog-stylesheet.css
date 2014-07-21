@@ -80,3 +80,8 @@ footer {
 	display: block;
 	padding: 0px 65px;
 	}
+
+.social li a:hover {
+	color: #c00;
+	background-color: #fff;
+	}
