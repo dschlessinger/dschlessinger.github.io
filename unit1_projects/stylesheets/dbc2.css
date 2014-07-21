@@ -44,5 +44,16 @@ figure {
 	border-width: 1px;
 	}
 
+footer {
+	text-align: center;
+	background-color: #00CC00;
+	width: 700px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-width: 5px;
+	padding: 10px 10px 10px 10px;
+	}
 
 
