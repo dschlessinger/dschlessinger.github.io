@@ -47,18 +47,19 @@ header {
 
 content {
 	width: 90%;
-	margin-top: 5%;
+	margin-top: 2.5%;
 	margin-right: 5%;
 	margin-left: 5%;
 	display: inline-block;
 	}
 
 footer {
+	position: fixed;
 	text-align: center;
 	background-color: #3399FF;
 	width: 90%;
 	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-bottom: 2.5%;
 	margin-left: 5%;
 	margin-right: 5%;
 	border-style: solid;
