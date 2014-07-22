@@ -24,6 +24,8 @@
 	}
 
 .imgright {
+	float: right;
+	position: absolute;
 	display: inline;
 	}
 
