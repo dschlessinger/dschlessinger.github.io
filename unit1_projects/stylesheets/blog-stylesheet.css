@@ -18,13 +18,13 @@
 	}
 
 .imgleft {
-	display: block;
-	margin-left: 5%;
+	float: left;
+    position: absolute;
+    display: inline;
 	}
 
 .imgright {
-	display: block;
-	margin-right: 5%;
+	display: inline;
 	}
 
 header {
