@@ -25,6 +25,7 @@
 .imgright {
 	float: right;
 	display: block;
+	clear: both;
 	}
 
 header {
