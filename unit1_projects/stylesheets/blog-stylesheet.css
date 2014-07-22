@@ -19,13 +19,11 @@
 
 .imgleft {
 	float: left;
-    position: absolute;
     display: block;
 	}
 
 .imgright {
 	float: right;
-	position: absolute;
 	display: block;
 	}
 
