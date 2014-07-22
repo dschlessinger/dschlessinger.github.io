@@ -20,12 +20,13 @@
 .imgleft {
 	float: left;
     display: block;
+    padding-right: 100px;
 	}
 
 .imgright {
 	float: right;
 	display: block;
-	clear: both;
+	padding-left: 100px;
 	}
 
 header {
