@@ -20,13 +20,13 @@
 .imgleft {
 	float: left;
     position: absolute;
-    display: inline;
+    display: block;
 	}
 
 .imgright {
 	float: right;
 	position: absolute;
-	display: inline;
+	display: block;
 	}
 
 header {
