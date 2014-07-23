@@ -55,6 +55,7 @@ header h1 {
 
 .nav li {
 	float: left;
+	width: 25%;
 	}
 
 .nav li a {
@@ -67,6 +68,10 @@ header h1 {
 .nav li a:hover {
 	color: #c00;
 	background-color: #fff;
+	}
+
+.nav li a:visited {
+	text-decoration: none;
 	}
 
 content {
@@ -104,6 +109,7 @@ footer {
 
 .social li a {
 	display: block;
+	width: 14.28%;
 	padding: 0px 65px;
 	}
 
