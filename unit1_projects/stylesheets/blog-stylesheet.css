@@ -60,8 +60,8 @@ header h1 {
 
 .nav li a {
 	display: block;
-	padding: 0px 120px;
-	text-decoration: none; !important;
+	text-align: center;
+	text-decoration: none;
 	font-weight: bold;
 	}
 
