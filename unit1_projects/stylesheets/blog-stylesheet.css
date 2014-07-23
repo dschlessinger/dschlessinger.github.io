@@ -81,6 +81,18 @@ content {
 	margin-left: 5%;
 	display: inline-block;
 	}
+.kickimgs {
+	width:100%;
+	position: relative;
+	text-align: center;
+}
+#kick1, #kick2{
+	width:30%;
+}
+
+#kick1 {
+	margin-right:10%;
+}
 
 footer {
 	background-color: #3399FF;
