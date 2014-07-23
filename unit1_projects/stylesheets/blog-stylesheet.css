@@ -105,11 +105,11 @@ footer {
 
 .social li {
 	float: left;
+	width: 14.28%;
 	}
 
 .social li a {
 	display: block;
-	width: 14.28%;
 	}
 
 .social li a:hover {
