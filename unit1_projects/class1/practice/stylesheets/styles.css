@@ -1,4 +1,8 @@
 /* General Styles */
+.font {
+  font-family: Courier; monospace;
+  }
+
 body {
   background-color: rgb(241, 241, 241);
   font-size: 16px;
@@ -17,6 +21,10 @@ a {
   color: #1D766F;
   text-decoration: none;
 }
+
+a:hover {
+  color: green;
+  }
 
 h1 {
   font-size: 2.2em;
@@ -48,10 +56,10 @@ h4 {
 }
 
 /* Navigation */
-.nav li {
+nav li {
   float: left;
 }
-.nav li a {
+nav li a {
   color: #fff;
   margin: 0 10px;
   padding: 5px 10px;
@@ -75,25 +83,25 @@ h4 {
 
 
 /* Header */
-#header {
+header {
   background-color: #009D92;
   padding: 10px;
 }
-#header h1 {
+header h1 {
   color: #FFEECC;
   background: url('../images/icons/it.png') no-repeat 0 50%;
   padding-left: 40px;
 }
-#header .nav {
+header nav {
   float: right;
   font-size: 1.2em;
   margin-left: 20px;
 }
-#header .nav li {
+header nav li {
   line-height: 75px;
 }
 
-#header:after {
+header:after {
   /* clearfix hack */
   content: "";
   display: table;
