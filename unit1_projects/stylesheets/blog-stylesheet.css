@@ -54,6 +54,7 @@ header h1 {
 	}
 
 .nav li a {
+	color: blue; !important;
 	display: block;
 	text-align: center;
 	text-decoration: none;
