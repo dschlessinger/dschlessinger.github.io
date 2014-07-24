@@ -3,6 +3,10 @@
 	font-family: Courier; monospace; !important;
 	}
 
+.behind {
+	margin-top: 15%;
+}
+
 .center {
 	text-align: center;
 	}
@@ -28,7 +32,7 @@
 header {
 	background-color: #3399FF;
 	width: 90%;
-	height: 15%;
+	height: 10%;
 	margin-top: 5%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -72,10 +76,10 @@ header h1 {
 	}
 
 content {
-	width: 90%;
+	width: 50%;
 	margin-top: 0 auto;
-	margin-right: 5%;
-	margin-left: 5%;
+	margin-right: 25%;
+	margin-left: 25%;
 	display: inline-block;
 	}
 
