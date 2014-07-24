@@ -12,21 +12,14 @@
 	}
 
 .imgcenter {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	}
 
-.imgleft {
-	float: left;
-    display: block;
-    padding-right: 120px;
-	}
-
-.imgright {
-	float: right;
-	display: block;
-	padding-left: 120px;
+.imgs {
+	width:100%;
+	position: relative;
+	text-align: center;
 	}
 
 header {
@@ -80,12 +73,6 @@ content {
 	margin-right: 5%;
 	margin-left: 5%;
 	display: inline-block;
-	}
-
-.imgs {
-	width:100%;
-	position: relative;
-	text-align: center;
 	}
 
 #kick1, #kick2 {
