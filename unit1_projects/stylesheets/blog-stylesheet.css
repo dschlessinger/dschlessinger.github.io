@@ -81,14 +81,16 @@ content {
 	margin-left: 5%;
 	display: inline-block;
 	}
-.kickimgs {
+
+.imgs {
 	width:100%;
 	position: relative;
 	text-align: center;
-}
-#kick1, #kick2{
+	}
+
+#kick1, #kick2 {
 	width:30%;
-}
+	}
 
 #kick1 {
 	margin-right:10%;
