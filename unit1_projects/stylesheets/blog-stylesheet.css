@@ -77,13 +77,14 @@ content {
 	display: inline-block;
 	}
 
-#kick1, #kick2 {
+.img1 {
 	width:30%;
+	margin-right:10%;
 	}
 
-#kick1 {
-	margin-right:10%;
-}
+.img2 {
+	width:30%;
+	}
 
 footer {
 	background-color: #3399FF;
