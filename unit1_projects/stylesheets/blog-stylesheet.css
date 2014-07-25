@@ -85,18 +85,20 @@ content {
 
 column1 {
 	display: inline-block;
-	width: 22%;
+	width: 24.33%;
 	border-style: dashed;
 	border-width: 2%;
 	border-color: black;
 	padding: 0% 1%;
-	margin-left: 2.5%;
+	margin-left: 5%;
 	margin-right: 5%;
 	vertical-align: top;
 }
 
 column1 h1 {
 	text-align: center;
+	background-color: #3399FF;
+	color: yellow;
 }
 
 column1 li a {
@@ -109,7 +111,7 @@ column1 li a:visited {
 
 column2 {
 	display: inline-block;
-	width: 22%;
+	width: 24.33%;
 	border-style: dashed;
 	border-width: 2%;
 	border-color: black;
@@ -120,6 +122,8 @@ column2 {
 
 column2 h1 {
 	text-align: center;
+	background-color: #3399FF;
+	color: yellow;
 }
 
 column2 li a {
@@ -132,7 +136,7 @@ column2 li a:visited {
 
 column3 {
 	display: inline-block;
-	width: 22%;
+	width: 24.33%;
 	border-style: dashed;
 	border-width: 2%;
 	border-color: black;
@@ -142,6 +146,8 @@ column3 {
 
 column3 h1 {
 	text-align: center;
+	background-color: #3399FF;
+	color: yellow
 }
 
 column3 li a {
