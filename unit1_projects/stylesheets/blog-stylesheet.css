@@ -103,7 +103,7 @@ column1 li a {
 	text-decoration: none
 }
 
-column1 li a:visted {
+column1 li a:visited {
 	text-decoration: none; !important;
 }
 
