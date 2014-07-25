@@ -99,10 +99,6 @@ column1 h1 {
 	text-align: center;
 }
 
-column1 li {
-	text-align: center;
-}
-
 column1 a {
 	text-decoration: none
 }
@@ -118,10 +114,6 @@ column2 {
 }
 
 column2 h1 {
-	text-align: center;
-}
-
-column2 li {
 	text-align: center;
 }
 
@@ -143,12 +135,8 @@ column3 h1 {
 	text-align: center;
 }
 
-column3 li {
-	text-align: center;
-}
-
 column3 a {
-	text-decoration: none
+	text-decoration: none; !important;
 }
 
 .img1 {
