@@ -76,12 +76,16 @@ header h1 {
 	}
 
 content {
-	width: 50%;
+	width: 90%;
 	margin-top: 0 auto;
-	margin-right: 25%;
-	margin-left: 25%;
+	margin-right: 5%;
+	margin-left: 5%;
 	display: inline-block;
 	}
+
+column {
+	width:;
+}
 
 .img1 {
 	width:30%;
