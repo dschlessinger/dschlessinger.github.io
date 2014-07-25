@@ -84,7 +84,24 @@ content {
 	}
 
 column {
-	width:;
+	display: ;
+	width: 27%;
+	border-style: dashed;
+	border-width: 2%;
+	border-color: black;
+	padding: 5%;
+}
+
+column1 {
+	margin-right: 5%;
+}
+
+column2 {
+	margin-right: 5%;
+}
+
+column3 {
+	margin-right: 5%;
 }
 
 .img1 {
