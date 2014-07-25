@@ -85,6 +85,7 @@ content {
 
 column1 {
 	display: inline-block;
+	position-top: 0px;
 	width: 22%;
 	border-style: dashed;
 	border-width: 2%;
@@ -99,12 +100,17 @@ column1 h1 {
 	text-align: center;
 }
 
-column1 a {
+column1 li a {
 	text-decoration: none
+}
+
+column1 li a:visted {
+	text-decoration: none; !important;
 }
 
 column2 {
 	display: inline-block;
+	position-top: 0px;
 	width: 22%;
 	border-style: dashed;
 	border-width: 2%;
@@ -117,13 +123,17 @@ column2 h1 {
 	text-align: center;
 }
 
-column2 a {
+column2 li a {
 	text-decoration: none
 }
 
+column2 li a:visited {
+	text-decoration: none; !important;
+}
 
 column3 {
 	display: inline-block;
+	position-top: 0px;
 	width: 22%;
 	border-style: dashed;
 	border-width: 2%;
@@ -135,7 +145,11 @@ column3 h1 {
 	text-align: center;
 }
 
-column3 a {
+column3 li a {
+	text-decoration: none; !important;
+}
+
+column3 li a:visited {
 	text-decoration: none; !important;
 }
 
