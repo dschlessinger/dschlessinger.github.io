@@ -95,10 +95,14 @@ column1 {
 	vertical-align: top;
 }
 
-column1 h1 {
+column1 h2 {
 	text-align: center;
 	background-color: #3399FF;
 	color: yellow;
+	padding: 0% 1%;
+	border-style: solid;
+	border-color: black;
+	border-radius: 17px;
 }
 
 column1 li a {
@@ -120,10 +124,14 @@ column2 {
 	vertical-align: top;
 }
 
-column2 h1 {
+column2 h2 {
 	text-align: center;
 	background-color: #3399FF;
 	color: yellow;
+	padding: 0% 1%;
+	border-style: solid;
+	border-color: black;
+	border-radius: 17px;
 }
 
 column2 li a {
@@ -144,10 +152,14 @@ column3 {
 	vertical-align: top;
 }
 
-column3 h1 {
+column3 h2 {
 	text-align: center;
 	background-color: #3399FF;
-	color: yellow
+	color: yellow;
+	padding: 0% 1%;
+	border-style: solid;
+	border-color: black;
+	border-radius: 17px;
 }
 
 column3 li a {
