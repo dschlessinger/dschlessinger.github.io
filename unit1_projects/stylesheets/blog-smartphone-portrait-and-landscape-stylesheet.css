@@ -60,12 +60,11 @@ and (max-device-width : 480px) {
 				color: blue; !important;
 				text-align: center;
 				text-decoration: none;
+				background-color: #fff;
+				border-style: solid;
+				border-color: #fff;
+				border-radius: 17px;
 				}
-
-				.nav li a:hover {
-					color: #c00;
-					background-color: #fff;
-					}
 
 				.nav li a:visited {
 					text-decoration: none;
