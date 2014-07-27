@@ -21,7 +21,9 @@ header {
         
             header nav li {
                 list-style-type: none;
-                width: 33.33%;
+                width: 25%;
+                padding-left: 3.333%;
+                padding-right: 3.3333%;
                 float: left;
             }
 
