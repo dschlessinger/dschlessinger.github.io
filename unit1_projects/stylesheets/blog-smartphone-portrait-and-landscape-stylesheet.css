@@ -53,7 +53,6 @@ and (max-device-width : 480px) {
 			float: left;
 			width: 50%;
 			padding-bottom: 20%;
-			font-size: 4em; !important;
 			}
 
 			.nav li a {
