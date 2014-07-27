@@ -72,12 +72,11 @@ and (max-device-width : 1024px) {
 	/* Index ----------------------------------------------------------------------------- */
 
 		column1 {
-			display: inline-block;
-			width: 24.33%;
+			display: block;
+			width: 80%;
 			padding: 0% 1%;
-			margin-left: 5%;
-			margin-right: 5%;
-			vertical-align: top;
+			margin-left: auto;
+			margin-right: auto;
 			}
 
 			column1 h2 {
@@ -100,11 +99,11 @@ and (max-device-width : 1024px) {
 					}
 
 		column2 {
-			display: inline-block;
-			width: 24.33%;
+			display: block;
+			width: 80%;
 			padding: 0% 1%;
-			margin-right: 5%;
-			vertical-align: top;
+			margin-left: auto;
+			margin-right: auto;
 			}
 
 			column2 h2 {
@@ -127,10 +126,11 @@ and (max-device-width : 1024px) {
 				}
 
 		column3 {
-			display: inline-block;
-			width: 24.33%;
+			display: block;
+			width: 80%;
 			padding: 0% 1%;
-			vertical-align: top;
+			margin-left: auto;
+			margin-right: auto;
 			}
 
 			column3 h2 {
