@@ -8,7 +8,6 @@ and (max-device-width : 480px) {
 		.font {
 			color: #000 !important;
 			font-family: Courier; monospace; !important;
-			font-size: 0.5em;
 			}
 
 		.center {
