@@ -56,9 +56,6 @@ and (max-device-width : 480px) {
 			padding-left: 12.5%;
 			padding-right: 12.5%;
 			padding-bottom: 5%;
-			border-style: solid;
-			border-color: #fff;
-			border-radius: 17px;
 			}
 
 			.nav li a {
@@ -66,6 +63,9 @@ and (max-device-width : 480px) {
 				text-align: center;
 				text-decoration: none;
 				background-color: #fff;
+				border-style: solid;
+				border-color: #fff;
+				border-radius: 17px;
 				}
 
 				.nav li a:visited {
