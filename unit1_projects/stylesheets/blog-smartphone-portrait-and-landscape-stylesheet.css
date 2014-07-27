@@ -52,6 +52,7 @@ and (max-device-width : 480px) {
 		.nav li {
 			float: left;
 			width: 50%;
+			padding-bottom: 5%;
 			}
 
 			.nav li a {
