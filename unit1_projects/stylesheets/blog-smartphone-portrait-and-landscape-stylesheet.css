@@ -50,6 +50,7 @@ and (max-device-width : 480px) {
 			}
 
 		.nav li {
+			display: block;
 			float: left;
 			width: 50%;
 			padding-bottom: 5%;
@@ -57,7 +58,6 @@ and (max-device-width : 480px) {
 
 			.nav li a {
 				color: blue; !important;
-				display: block;
 				text-align: center;
 				text-decoration: none;
 				}
