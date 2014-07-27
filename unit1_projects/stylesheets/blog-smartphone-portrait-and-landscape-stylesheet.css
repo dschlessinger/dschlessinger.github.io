@@ -25,6 +25,7 @@ and (max-device-width : 480px) {
 			font-family: 'Lobster', cursive;
 			background-color: #3399FF;
 			width: 90%;
+			height: 30%;
 			margin-top: 5%;
 			margin-left: 5%;
 			margin-right: 5%;
@@ -52,7 +53,7 @@ and (max-device-width : 480px) {
 			display: block;
 			float: left;
 			width: 50%;
-			padding-bottom: 20%;
+			padding-bottom: 50%;
 			}
 
 			.nav li a {
