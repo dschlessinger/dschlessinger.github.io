@@ -1,4 +1,6 @@
-/* General */
+/* Desktops and Laptops (>1024px) (portrait and landscape) ----------------------------------------------------------------------------- */
+
+/* General -----------------------------------------------------------------------------*/
 
 	.font {
 		color: #000 !important;
@@ -13,7 +15,7 @@
 		max-width: 500px;
 		}
 
-/* Header */
+/* Header -----------------------------------------------------------------------------*/
 
 	header {
 		font-family: 'Lobster', cursive;
@@ -30,9 +32,10 @@
 
 	header h1 {
 		color: #fff;
+		font-size: 3em;
 		}
 
-/* Navigation */
+/* Navigation -----------------------------------------------------------------------------*/
 
 	.nav {
 		width: 100%;
@@ -63,7 +66,7 @@
 				text-decoration: none;
 				}
 
-/* Index */
+/* Index ----------------------------------------------------------------------------- */
 
 	column1 {
 		display: inline-block;
@@ -146,7 +149,7 @@
 				text-decoration: none; !important;
 			}
 
-/* Index */
+/* Blog Content ----------------------------------------------------------------------------- */
 
 	content {
 		width: 90%;
@@ -179,7 +182,7 @@
 		width:30%;
 		}
 
-/* Footer and Social */
+/* Footer and Social ----------------------------------------------------------------------------- */
 
 	footer {
 		background-color: #3399FF;
