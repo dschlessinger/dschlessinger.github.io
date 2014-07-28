@@ -187,6 +187,31 @@
 		width:30%;
 		}
 
+/* Features ----------------------------------------------------------------------------- */
+
+.week2_feature {
+	text-align: center;
+	width: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px;
+	border-color: black;
+	border-style: solid;
+}
+
+	.week2_feature #border {
+		border: 2px;
+		border-color: black;
+		border-style: solid;
+	}
+
+	.week2_feature #padding {
+		border: 2px;
+		border-color: black;
+		border-style: solid;
+	}
+
 /* Footer and Social ----------------------------------------------------------------------------- */
 
 	footer {
