@@ -5,6 +5,9 @@
 	.font {
 		color: #000 !important;
 		font-family: Courier; monospace; !important;
+		a:visited {
+			text-decoration: none;
+			}
 		}
 
 	.center {
@@ -94,7 +97,7 @@
 			}
 
 		column1 li a {
-			text-decoration: none
+			text-decoration: none;
 			}
 
 			column1 li a:visited {
@@ -121,7 +124,7 @@
 			}
 
 		column2 li a {
-			text-decoration: none
+			text-decoration: none;
 			}
 
 		column2 li a:visited {
