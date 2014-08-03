@@ -14,7 +14,7 @@
 		<link media="only screen and (min-device-width : 320px) and (max-device-width : 480px)" rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-smartphone-portrait-and-landscape-stylesheet.css">
 
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-		<title>DBC Blog: Week 2 Technical</title>
+		<title>DBC Technical Blog: Week 2</title>
 	</head>
 
 	<body>
@@ -22,54 +22,56 @@
 			<h1 class="center"><a href="index.html">Daniel Schlessinger's Dev Bootcamp Blog</a></h1>
 			<ul class="nav">
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="../blog-posts/week1_technical.html">Technical</a></li>
-				<li><a href="../blog-posts/week1_cultural.html">Cultural</a></li>
+				<li><a href="../blog-posts/technical_index.html">Technical Blog</a></li>
+				<li><a href="../blog-posts/cultural_index.html">Cultural Blog</a></li>
 				<li><a href="../about.html">About</a></p></li>
 			</ul>
 		</header>
 
-		<content>
-			<h1 class="center">Margins vs. Borders vs. Padding</h1>
+		<article>
+			<h1 class="center"><a href="../blog-posts/technical_index.html">Technical Blog</a>: Week 2</h1>
+			<h2 class="center">Margins vs. Borders vs. Padding</h2>
 			<h3 class="center"><i>July 27, 2014</i></h3>
 			<hr class="shorthr">
+
 			<br>
-			<a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank"><img class="imgcenter" src="../unit1_projects/images/box-model.gif" alt="box_model" style="max-width:500px"></a>
-			<p style="text-align:center"><i>This!</i></p>
-			<br>
-			<column1>
+
+			<outsidecolumn>
 				<h2>Borders:</h2>
 				<ul>
 					<li>This is the outline around a piece of content.</li>
 					<li><b>Analogy:</b> Your bed frame.</li>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<li style="list-style-type:none;text-align:center"><img src="../unit1_projects/images/stick_figure.gif" alt="stick-figure" style="display:inline-block;max-width:80px;border-color:black;border-style:solid;border-width:2px"></li>
 				</ul>
-			</column1>
+				<img src="../unit1_projects/images/stick_figure.gif" alt="stick-figure" class="stickfigure">
+			</outsidecolumn>
 
-			<column2>
+			<middlecolumn>
 				<h2>Padding:</h2>
 				<ul>
 					<li>This is the space in between the content and the border.</li>
 					<li><b>Analogy:</b> The empty space on your bed that your body naturally doesn't fill up.</li>
-					<br>
-					<li style="list-style-type:none;text-align:center"><img src="../unit1_projects/images/stick_figure.gif" alt="stick-figure" style="display:inline-block;max-width:80px;border-color:black;border-style:solid;border-width:2px;padding:10px"></li>
 				</ul>
-			</column2>
+				<img src="../unit1_projects/images/stick_figure.gif" alt="stick-figure" class="stickfigure" style="padding:10px">
+			</middlecolumn>
 
-			<column3>
+			<outsidecolumn>
 				<h2>Margins:</h2>
 				<ul>
 					<li>This is the space in between a border and another element.</li>
 					<li><b>Analogy:</b> The space in between you and your roommate's beds.</li>
-					<br>
-					<li style="list-style-type:none"><img src="../unit1_projects/images/stick_figure.gif" alt="stick-figure" style="display:inline-block;max-width:80px;border-color:black;border-style:solid;border-width:2px;padding:10px;margin-right:30px"><img src="../unit1_projects/images/stick_figure.gif" alt="stick-figure-2" style="display:inline-block;max-width:80px;border-color:black;border-style:solid;border-width:2px;padding:10px"></li>
 				</ul>
-			</column3>
-		</content>
+				<div class="imgs">
+					<img src="../unit1_projects/images/stick_figure.gif" alt="stick-figure" class="stickfigure" style="display:inline-block;padding:10px;margin-right:30px">
+					<img src="../unit1_projects/images/stick_figure.gif" alt="stick-figure-2" class="stickfigure" style="display:inline-block;padding:10px">
+				</div>
+			</outsidecolumn>
+
+			<br>
+
+			<h2 class="center">See, isn't that way better than <i>this</i>?</h1>
+			<br>
+			<a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank"><img class="imgcenter" src="../unit1_projects/images/box-model.gif" alt="box_model" style="max-width:500px"></a>
+		</article>
 
 		<footer>
 			<ul class="social">
