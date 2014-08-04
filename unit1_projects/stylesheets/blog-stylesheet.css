@@ -166,6 +166,18 @@
 		display: block;
 		}
 
+		article h1 {
+			font-size: 2em;
+		}
+
+		article ol li {
+			padding-bottom: 1em;
+		}
+
+		article ul li {
+			padding-bottom: 1em;
+		}
+
 	.imgcenter {
 		width: 500px;
 		display: block;
