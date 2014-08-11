@@ -78,7 +78,7 @@
 			}
 
 			.nav li a:hover {
-				color: #c00;
+				color: #c00; !important;
 				background-color: #fff;
 				}
 
@@ -189,6 +189,10 @@
 		display: block;
 		}
 
+		section h1 a:visited {
+				color: blue;
+			}
+
 	article {
 		width: 90%;
 		margin-top: 5%;
@@ -200,6 +204,10 @@
 		article h1 {
 			font-size: 2em;
 		}
+
+			article h1 a:visited {
+				color: blue;
+			}
 
 		article ol li {
 			padding-bottom: 1em;
