@@ -15,7 +15,7 @@
 		}
 
 	.shorthr {
-		max-width: 500px;
+		max-width: 50%;
 		}
 
 	.stickfigure {
@@ -108,7 +108,7 @@
 			}
 
 		outsidecolumn li {
-			padding-bottom: 4px;	
+			padding-bottom: 4px;
 			}
 
 			outsidecolumn li a {
@@ -137,7 +137,7 @@
 			}
 
 		middlecolumn li {
-			padding-bottom: 4px;	
+			padding-bottom: 4px;
 			}
 
 				middlecolumn li a {
@@ -159,7 +159,7 @@
 		}
 
 	article {
-		width: 90%;
+		width: 50%;
 		margin-top: 5%;
 		margin-right: auto;
 		margin-left: auto;
@@ -179,7 +179,7 @@
 		}
 
 	.imgcenter {
-		width: 500px;
+		width: 40%;
 		display: block;
 		text-align: center;
 		margin-left: auto;
@@ -193,12 +193,12 @@
 		}
 
 	.img1 {
-		width: 500px;
+		width: 40%;
 		margin-right:10%;
 		}
 
 	.img2 {
-		width: 500px;
+		width: 40%;
 		}
 
 /* Footer and Social ----------------------------------------------------------------------------- */
