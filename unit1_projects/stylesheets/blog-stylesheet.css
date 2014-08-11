@@ -15,7 +15,7 @@
 		}
 
 	.shorthr {
-		max-width: 50%;
+		max-width: 500px;
 		}
 
 	.stickfigure {
@@ -148,6 +148,37 @@
 						text-decoration: none; !important;
 						}
 
+	singlecolumn {
+	display: block;
+	width: 26%;
+	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	singlecolumn h2 {
+		text-align: center;
+		background-color: #3399FF;
+		color: yellow;
+		padding: 0% 1%;
+		width: 100%;
+		border-style: solid;
+		border-color: black;
+		border-radius: 17px;
+		}
+
+	singlecolumn li {
+		padding-bottom: 4px;
+		}
+
+			singlecolumn li a {
+				text-decoration: none;
+				}
+
+				singlecolumn li a:visited {
+					text-decoration: none; !important;
+					}
+
 /* Blog Content ----------------------------------------------------------------------------- */
 
 	section {
@@ -159,7 +190,7 @@
 		}
 
 	article {
-		width: 50%;
+		width: 90%;
 		margin-top: 5%;
 		margin-right: auto;
 		margin-left: auto;
@@ -179,7 +210,7 @@
 		}
 
 	.imgcenter {
-		width: 40%;
+		width: 500px;
 		display: block;
 		text-align: center;
 		margin-left: auto;
@@ -193,12 +224,12 @@
 		}
 
 	.img1 {
-		width: 40%;
+		width: 500px;
 		margin-right:10%;
 		}
 
 	.img2 {
-		width: 40%;
+		width: 500px;
 		}
 
 /* Footer and Social ----------------------------------------------------------------------------- */
