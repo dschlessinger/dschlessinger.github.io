@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="font">
+
+	<head>
+		<html lang="en">
+
+		<!-- General Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-stylesheet.css">
+
+		<!-- iPads (portrait and landscape) Stylesheet -->
+		<link media= "only screen and (min-device-width:768px) and (max-device-width:1024px)" rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-ipad-portrait-and-landscape-stylesheet.css">
+
+		<!-- Smartphones (portrait and landscape) Stylesheet -->
+		<link media="only screen and (min-device-width : 320px) and (max-device-width : 480px)" rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-smartphone-portrait-and-landscape-stylesheet.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<title>DBC Technical Blog: Week 4</title>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="center"><a href="index.html">Daniel Schlessinger's Dev Bootcamp Blog</a></h1>
+			<ul class="nav">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../technical_index.html">Technical Blog</a></li>
+				<li><a href="../cultural_index.html">Cultural Blog</a></li>
+				<li><a href="../about.html">About</a></p></li>
+			</ul>
+		</header>
+
+		<article>
+			<h1 class="center"><a href="../technical_index.html">Technical Blog</a>: Week 4</h1>
+			<h2 class="center">Public Ruby Methods: #Map<h2>
+			<h3 class="center"><i>August 10, 2014</i></h3>
+			<hr class="shorthr">
+			<br>
+			<p>This week's blog post will be short but sweet. Ruby's map method is effective and useful in numerous scenarious. You call .map on an enumerable object (an array or a range) and follow it with a block. Accordingly, it will return a new array calling the given block for each element. For example:</p>
+			<a href="http://www.ruby-doc.org/core-2.1.1/Enumerable.html#method-i-map/" target="_blank">
+				<img class="imgcenter" src="../unit1_projects/images/map.png" alt="map" style="width:50%">
+			</a>
+			<p>Here are some ways the map function is particularly useful:</p>
+				<ul>
+					<li>When you would like to non-destructively modify each element of an array. The each function is useful for many things, but the map function will create a new array, which could be helpful if you'd like to use the previous one later on in your code.</li>
+					<li>If you'd like to map into the same array, you can use .map! instead.</li>
+					<li>The method .collect is an alias of .map - you can use either to accomplish the same thing.</li>
+				</ul>
+			<hr class="shorthr">
+		</article>
+
+		<footer>
+			<ul class="social">
+				<li><a href="mailto:schlessinger.daniel@gmail.com" target="_blank">
+					<img src="../unit1_projects/images/social-email.png" alt="email" style="max-width:50px"></a></li>
+				<li><a href="https://www.linkedin.com/pub/daniel-schlessinger/34/9a2/a96/" target="_blank">
+					<img src="../unit1_projects/images/social-linkedin.png" alt="linked-in" style="max-width:50px"></a></li>
+				<li><a href="https://github.com/dschlessinger/" target="_blank">
+					<img src="../unit1_projects/images/social-github.png" alt="github" style="max-width:50px"></a></li>
+				<li><a href="https://plus.google.com/+DanielSchlessinger/" target="_blank">
+					<img src="../unit1_projects/images/social-googleplus.png" alt="google+" style="max-width:50px"></a></li>
+				<li><a href="https://www.facebook.com/schlessinger.daniel/" target="_blank">
+					<img src="../unit1_projects/images/social-facebook.png" alt="facebook" style="max-width:50px"></a></li>
+				<li><a href="https://twitter.com/dschless/" target="_blank">
+					<img src="../unit1_projects/images/social-twitter.png" alt="twitter" style="max-width:50px"></a></li>
+				<li><a href="https://instagram.com/djdschless/" target="_blank">
+					<img src="../unit1_projects/images/social-instagram.png" alt="instagram" style="max-width:50px"></a></li>
+			</ul>
+		</footer>
+
+	<body>
+
+<html/>
