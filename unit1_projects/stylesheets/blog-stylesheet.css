@@ -6,7 +6,7 @@
 		color: #000 !important;
 		font-family: Courier; monospace; !important;
 		a:visited {
-			color: blue;
+			color: blue; !important;
 			}
 		}
 
