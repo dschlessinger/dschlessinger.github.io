@@ -6,7 +6,7 @@
 		color: #000 !important;
 		font-family: Courier; monospace; !important;
 		a:visited {
-			text-decoration: none;
+			color: blue;
 			}
 		}
 
@@ -83,7 +83,7 @@
 				}
 
 			.nav li a:visited {
-				text-decoration: none;
+				color: blue;
 				}
 
 /* Index ----------------------------------------------------------------------------- */
@@ -116,7 +116,7 @@
 				}
 
 				outsidecolumn li a:visited {
-					text-decoration: none; !important;
+					color: blue;
 					}
 
 	middlecolumn {
@@ -145,7 +145,7 @@
 					}
 
 					middlecolumn li a:visited {
-						text-decoration: none; !important;
+						color: blue;
 						}
 
 	singlecolumn {
@@ -176,7 +176,7 @@
 				}
 
 				singlecolumn li a:visited {
-					text-decoration: none; !important;
+					color: blue;
 					}
 
 /* Blog Content ----------------------------------------------------------------------------- */
@@ -205,8 +205,16 @@
 			padding-bottom: 1em;
 		}
 
+			article ol li a: visited{
+			color: blue;
+		}
+
 		article ul li {
 			padding-bottom: 1em;
+		}
+
+			article ul li a: visited{
+			color: blue;
 		}
 
 	.imgcenter {

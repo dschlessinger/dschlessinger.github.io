@@ -1,6 +1,6 @@
 /* iPads (portrait and landscape) ----------------------------------------------------------------------------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 
 /* General -----------------------------------------------------------------------------*/
@@ -105,7 +105,7 @@ and (max-device-width : 1024px) {
 			}
 
 		outsidecolumn li {
-			padding-bottom: 4px;	
+			padding-bottom: 4px;
 			}
 
 			outsidecolumn li a {
@@ -136,7 +136,7 @@ and (max-device-width : 1024px) {
 			}
 
 			middlecolumn li {
-			padding-bottom: 4px;	
+			padding-bottom: 4px;
 			}
 
 				middlecolumn li a {
@@ -146,6 +146,37 @@ and (max-device-width : 1024px) {
 					middlecolumn li a:visited {
 						text-decoration: none; !important;
 						}
+
+	singlecolumn {
+	display: block;
+	width: 80%;
+	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	singlecolumn h2 {
+		text-align: center;
+		background-color: #3399FF;
+		color: yellow;
+		padding: 0% 1%;
+		width: 100%;
+		border-style: solid;
+		border-color: black;
+		border-radius: 17px;
+		}
+
+	singlecolumn li {
+		padding-bottom: 4px;
+		}
+
+			singlecolumn li a {
+				text-decoration: none;
+				}
+
+				singlecolumn li a:visited {
+					text-decoration: none; !important;
+					}
 
 /* Blog Content ----------------------------------------------------------------------------- */
 
