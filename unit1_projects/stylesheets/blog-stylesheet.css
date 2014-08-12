@@ -224,6 +224,12 @@
 			color: blue;
 		}
 
+		article iframe {
+			margin-left:auto;
+			margin-right:auto;
+			display:block
+		}
+
 	.imgcenter {
 		width: 500px;
 		display: block;
