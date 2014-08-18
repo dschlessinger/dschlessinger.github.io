@@ -14,8 +14,9 @@
 		<link media="only screen and (min-device-width : 320px) and (max-device-width : 480px)" rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-smartphone-portrait-and-landscape-stylesheet.css">
 
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Tangerine|Roboto:400,300,500,400italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=desert"></script>
 
 		<title>DBC Technical Blog: Week 5</title>
 	</head>
@@ -37,16 +38,32 @@
 			<h3 class="center"><i>August 17, 2014</i></h3>
 			<hr class="shorthr">
 			<br>
-			<p>This week's blog post will be short but sweet. Ruby's map method is effective and useful in numerous scenarious. You call .map on an enumerable object (an array or a range) and follow it with a block. Accordingly, it will return a new array calling the given block for each element. For example:</p>
-			<a href="http://www.ruby-doc.org/core-2.1.1/Enumerable.html#method-i-map/" target="_blank">
-				<img class="imgcenter" src="../unit1_projects/images/map.png" alt="map" style="width:50%">
-			</a>
-			<p>Here are some ways the map function is particularly useful:</p>
-				<ul>
-					<li>When you would like to non-destructively modify each element of an array. The each function is useful for many things, but the map function will create a new array, which could be helpful if you'd like to use the previous one later on in your code.</li>
-					<li>If you'd like to map into the same array, you can use .map! instead.</li>
-					<li>The method .collect is an alias of .map - you can use either to accomplish the same thing.</li>
-				</ul>
+			<p>Although Ruby's built in classes have a lot of built in functionality, we need the ability to model real life events and objects with their own properties. It's only natural, then, that we can create categories of real life objects called Ruby <em>classes</em>, and instantiate them with examples. Let's say we wanted to model your happiness throughout the day based on a variety of factors:</p>
+			<div class="code">
+<pre class="prettyprint">
+class Person
+
+	def initialize
+		database = {}
+	end
+
+	def happiness
+		puts "How old are you? "
+		@time = gets.chomp
+
+		puts "How many hours of sleep did you get last night? "
+		@hours = gets.chomp
+
+		puts "Did you "
+
+
+		predicted_deaths(@population_density, @population, @state)
+		speed_of_spread(@population_density, @state)
+	end #Ends the virus_effects method
+
+end
+</pre>
+			</div>
 			<br>
 			<hr class="shorthr">
 		</article>

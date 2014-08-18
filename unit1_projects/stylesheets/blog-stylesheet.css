@@ -2,13 +2,21 @@
 
 /* General -----------------------------------------------------------------------------*/
 
-	.font {
-		color: #000 !important;
-		font-family: Courier; monospace; !important;
-		a:visited {
-			color: blue; !important;
-			}
-		}
+	.prettyprint {
+		font-family: 'Inconsolata';
+		border-width: 3px;
+		border-style: solid;
+		border-color: #3399FF;
+		padding: 1em;
+	}
+
+	.prettyprint ol li {
+		padding-bottom: 0px; !important;
+	}
+
+	a:visited {
+		color: blue; !important;
+	}
 
 	.center {
 		text-align: center;
@@ -54,6 +62,10 @@
 				text-decoration: none;
 				color: #fff; !important;
 				}
+
+			header h1 a:visited {
+				color: #fff; !important;
+			}
 
 /* Navigation -----------------------------------------------------------------------------*/
 
@@ -180,7 +192,15 @@
 
 /* Blog Content ----------------------------------------------------------------------------- */
 
+	.code {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 80%;
+	}
+
 	section {
+		font-family: Courier; monospace;
 		width: 90%;
 		margin-top: auto;
 		margin-right: auto;
@@ -192,7 +212,20 @@
 				color: blue;
 			}
 
+		section p {
+			font-family: Helvetica
+		}
+
+		section ol {
+			font-family: Helvetica
+		}
+
+		section ul {
+			font-family: Helvetica
+		}
+
 	article {
+		font-family: Courier; monospace;
 		width: 60%;
 		margin-top: 5%;
 		margin-right: auto;
@@ -208,21 +241,33 @@
 				color: blue;
 			}
 
-		article ol li {
-			padding-bottom: 1em;
+		article p {
+			font-family: Helvetica
 		}
 
-			article ol li a: visited{
-			color: blue;
+		article ol {
+			font-family: Helvetica
 		}
 
-		article ul li {
-			padding-bottom: 1em;
+			article ol li {
+				padding-bottom: 1em;
+			}
+
+				article ol li a: visited{
+				color: blue;
+			}
+
+		article ul {
+			font-family: Helvetica
 		}
 
-			article ul li a: visited{
-			color: blue;
-		}
+			article ul li {
+				padding-bottom: 1em;
+			}
+
+				article ul li a: visited{
+				color: blue;
+			}
 
 		article iframe {
 			margin-left:auto;
@@ -239,18 +284,18 @@
 		}
 
 	.imgs {
-		width:100%;
+		width: 100%;
 		position: relative;
 		text-align: center;
 		}
 
 	.img1 {
-		width: 500px;
+		width: 40%;
 		margin-right:10%;
 		}
 
 	.img2 {
-		width: 500px;
+		width: 40%;
 		}
 
 /* Footer and Social ----------------------------------------------------------------------------- */
