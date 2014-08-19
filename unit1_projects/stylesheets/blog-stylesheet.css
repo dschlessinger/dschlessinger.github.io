@@ -1,6 +1,17 @@
 /* Desktops and Laptops (>1024px) (portrait and landscape) ----------------------------------------------------------------------------- */
 
-/* General -----------------------------------------------------------------------------*/
+/* =========================================== */
+/* GENERAL */
+/* =========================================== */
+
+	body {
+		background-color: #F8F8F8;
+		background-size: 100%;
+		font-family: Helvetica Neue;
+		font: 200 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    font-weight: 200;
+	    letter-spacing: 0px;
+	}
 
 	.prettyprint {
 		font-family: 'Inconsolata';
@@ -38,7 +49,12 @@
 		margin-left: auto;
 		}
 
-/* Header -----------------------------------------------------------------------------*/
+
+
+
+/* =========================================== */
+/* HEADER */
+/* =========================================== */
 
 	header {
 		font-family: 'Lobster', cursive;
@@ -67,7 +83,12 @@
 				color: #fff; !important;
 			}
 
-/* Navigation -----------------------------------------------------------------------------*/
+
+
+
+/* =========================================== */
+/* NAVIGATION */
+/* =========================================== */
 
 	.nav {
 		width: 100%;
@@ -97,7 +118,12 @@
 				color: blue;
 				}
 
-/* Index ----------------------------------------------------------------------------- */
+
+
+
+/* =========================================== */
+/* INDEX */
+/* =========================================== */
 
 	outsidecolumn {
 		display: inline-block;
@@ -190,7 +216,12 @@
 					color: blue;
 					}
 
-/* Blog Content ----------------------------------------------------------------------------- */
+
+
+
+/* =========================================== */
+/* BLOG CONTENT */
+/* =========================================== */
 
 	.code {
 		display: block;
@@ -213,15 +244,15 @@
 			}
 
 		section p {
-			font-family: Helvetica
+			font-family: Roboto
 		}
 
 		section ol {
-			font-family: Helvetica
+			font-family: Roboto
 		}
 
 		section ul {
-			font-family: Helvetica
+			font-family: Roboto
 		}
 
 	article {
@@ -242,11 +273,11 @@
 			}
 
 		article p {
-			font-family: Helvetica
+			font-family: Roboto
 		}
 
 		article ol {
-			font-family: Helvetica
+			font-family: Roboto
 		}
 
 			article ol li {
@@ -258,7 +289,7 @@
 			}
 
 		article ul {
-			font-family: Helvetica
+			font-family: Roboto
 		}
 
 			article ul li {
@@ -298,7 +329,12 @@
 		width: 40%;
 		}
 
-/* Footer and Social ----------------------------------------------------------------------------- */
+
+
+
+/* =========================================== */
+/* FOOTER */
+/* =========================================== */
 
 	footer {
 		background-color: #3399FF;
