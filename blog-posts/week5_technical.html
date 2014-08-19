@@ -38,32 +38,98 @@
 			<h3 class="center"><i>August 17, 2014</i></h3>
 			<hr class="shorthr">
 			<br>
-			<p>Although Ruby's built in classes have a lot of built in functionality, we need the ability to model real life events and objects with their own properties. It's only natural, then, that we can create categories of real life objects called Ruby <em>classes</em>, and instantiate them with examples. Let's say we wanted to model your happiness throughout the day based on a variety of factors:</p>
+			<p>Although Ruby's built in classes have a lot of built in functionality, we need the ability to model real life events and objects with their own properties. It's only natural, then, that we can create categories of real life objects called Ruby <em>classes</em>, and instantiate them with examples. Remember <b>D.R.Y.</b> - <b>D</b>on't <b>R</b>epeat <b>Y</b>ourself. So if we're going to be using the same object functionality more than once, it's probably a good idea to just make a class for it. Let's say we wanted to model your happiness throughout the day based on hunger and sleep:</p>
+
 			<div class="code">
 <pre class="prettyprint">
 class Person
 
 	def initialize
-		database = {}
-	end
-
-	def happiness
-		puts "How old are you? "
-		@time = gets.chomp
-
 		puts "How many hours of sleep did you get last night? "
 		@hours = gets.chomp
 
-		puts "Did you "
-
-
-		predicted_deaths(@population_density, @population, @state)
-		speed_of_spread(@population_density, @state)
-	end #Ends the virus_effects method
+		puts "Did you eat breakfast? "
+		@breakfast = gets.chomp
+	end
 
 end
+
+Daniel = Person.new
 </pre>
 			</div>
+
+			<p>You first would define an initialize method as above. I chose to use the gets method to ask for user input, but you could easily supply the initialize function with arguments and then call them like so:</p>
+
+
+			<div class="code">
+<pre class="prettyprint">
+class Person
+
+	def initialize(hours, breakfast)
+		@hours = hours
+		@breakfast = breakfast
+	end
+
+end
+
+Daniel = Person.new(8, "no")
+</pre>
+			</div>
+
+			<p>Now imagine we add some methods to the class. We can use the private method to make the methods called within the happiness method invisible to the user. Breaking up the emotion and suggestion method make code easier to edit and read if we need to modify it in the future. Here is our final result:</p>
+
+			<div class="code">
+<pre class="prettyprint">
+class Person
+
+	def initialize
+		puts "How many hours of sleep did you get last night? "
+		@hours = gets.chomp
+
+		puts "Did you eat breakfast? "
+		@breakfast = gets.chomp
+	end
+
+	def happiness
+		emotion
+		suggestion
+	end
+
+	private # Everything after this line will be inaccessible to the user. It remains accessible to the code, however, since the two methods below were already called in the happiness method above.
+
+	def emotion
+		@hours = @hours.to_i
+		@breakfast = @breakfast.downcase
+
+		emotion = "happy" if (@hours >= 8 && @breakfast.downcase == "yes")
+		emotion = "hungry but well-rested" if (@hours >= 8 && @breakfast.downcase == "no")
+		emotion = "sleepy - but at least you had breakfast" if (@hours < 8 && @breakfast.downcase == "yes")
+		emotion = "angry" if (@hours < 8 && @breakfast.downcase == "no")
+
+		print "I bet you're feeling #{emotion} today! "
+	end
+
+	def suggestion
+		suggestion = "Keep up the good work!" if (@hours >= 8 && @breakfast.downcase == "yes")
+		suggestion = "Try eating breakfast tomorrow!" if (@hours >= 8 && @breakfast.downcase == "no")
+		suggestion = "Try getting at least #{8-@hours.to_i} more hours of sleep tomorrow!" if (@hours < 8 && @breakfast.downcase == "yes")
+		suggestion = "Try eating breakfast and getting at least #{8-@hours.to_i} more hour(s) of sleep tomorrow!" if (@hours < 8 && @breakfast.downcase == "no")
+
+		puts "#{suggestion}"
+	end
+end
+
+Daniel = Person.new
+	# => How many hours of sleep did you get last night?
+		# => 7
+	# => Did you eat breakfast?
+		# => yes
+
+Daniel.happiness
+	# => I bet you're feeling sleepy - but at least you had breakfast today! Try getting at least 1 more hour(s) of sleep tomorrow!
+</pre>
+			</div>
+
 			<br>
 			<hr class="shorthr">
 		</article>

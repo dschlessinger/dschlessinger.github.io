@@ -13,6 +13,11 @@
 	    letter-spacing: 0px;
 	}
 
+	pre {
+   		white-space: pre-wrap;
+   		word-wrap: break-word;
+	}
+
 	.prettyprint {
 		font-family: 'Inconsolata';
 		border-width: 3px;
