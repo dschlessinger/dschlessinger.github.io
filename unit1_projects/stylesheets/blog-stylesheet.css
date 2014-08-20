@@ -312,6 +312,7 @@
 		}
 
 	.imgcenter {
+		vertical-align: middle;
 		width: 500px;
 		display: block;
 		text-align: center;
@@ -326,11 +327,13 @@
 		}
 
 	.img1 {
+		vertical-align: middle;
 		width: 40%;
 		margin-right:10%;
 		}
 
 	.img2 {
+		vertical-align: middle;
 		width: 40%;
 		}
 
