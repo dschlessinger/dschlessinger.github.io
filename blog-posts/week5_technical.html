@@ -101,19 +101,19 @@ class Person
 		@hours = @hours.to_i
 		@breakfast = @breakfast.downcase
 
-		emotion = "happy" if (@hours >= 8 && @breakfast.downcase == "yes")
-		emotion = "hungry but well-rested" if (@hours >= 8 && @breakfast.downcase == "no")
-		emotion = "sleepy - but at least you had breakfast" if (@hours < 8 && @breakfast.downcase == "yes")
-		emotion = "angry" if (@hours < 8 && @breakfast.downcase == "no")
+		@emotion = "happy" if (@hours >= 8 && @breakfast.downcase == "yes")
+		@emotion = "hungry but well-rested" if (@hours >= 8 && @breakfast.downcase == "no")
+		@emotion = "sleepy - but at least you had breakfast" if (@hours < 8 && @breakfast.downcase == "yes")
+		@emotion = "angry" if (@hours < 8 && @breakfast.downcase == "no")
 
 		print "I bet you're feeling #{emotion} today! "
 	end
 
 	def suggestion
-		suggestion = "Keep up the good work!" if (@hours >= 8 && @breakfast.downcase == "yes")
-		suggestion = "Try eating breakfast tomorrow!" if (@hours >= 8 && @breakfast.downcase == "no")
-		suggestion = "Try getting at least #{8-@hours.to_i} more hours of sleep tomorrow!" if (@hours < 8 && @breakfast.downcase == "yes")
-		suggestion = "Try eating breakfast and getting at least #{8-@hours.to_i} more hour(s) of sleep tomorrow!" if (@hours < 8 && @breakfast.downcase == "no")
+		suggestion = "Keep up the good work!" if @emotion = "happy"
+		suggestion = "Try eating breakfast tomorrow!" if @emotion = "hungry but well-rested"
+		suggestion = "Try getting at least #{8-@hours.to_i} more hours of sleep tomorrow!" if @emotion = "sleepy - but at least you had breakfast"
+		suggestion = "Try eating breakfast and getting at least #{8-@hours.to_i} more hour(s) of sleep tomorrow!" if @emotion = "angry"
 
 		puts "#{suggestion}"
 	end
