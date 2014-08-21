@@ -83,6 +83,9 @@ Daniel = Person.new(8, "no")
 class Person
 
 	def initialize
+		puts "What's your name?"
+		@name = gets.chomp
+
 		puts "How many hours of sleep did you get last night? "
 		@hours = gets.chomp
 
@@ -91,35 +94,37 @@ class Person
 	end
 
 	def happiness
-		emotion
-		suggestion
+		statement
 	end
 
-	private # Everything after this line will be inaccessible to the user. It remains accessible to the code, however, since the two methods below were already called in the happiness method above.
+	private # Everything after this line will be inaccessible to the user but accessible to the happiness method.
 
-	def emotion
+	def statement
+		@name = name.capitalize
 		@hours = @hours.to_i
 		@breakfast = @breakfast.downcase
 
-		@emotion = "happy" if (@hours >= 8 && @breakfast.downcase == "yes")
-		@emotion = "hungry but well-rested" if (@hours >= 8 && @breakfast.downcase == "no")
-		@emotion = "sleepy - but at least you had breakfast" if (@hours < 8 && @breakfast.downcase == "yes")
-		@emotion = "angry" if (@hours < 8 && @breakfast.downcase == "no")
+		if (@hours >= 8 && @breakfast == "yes")
+			@emotion = "happy"
+			@suggestion = "Keep up the good work!"
+		if (@hours >= 8 && @breakfast == "no")
+			@emotion = "hungry but well-rested"
+			@suggestion = "Try eating breakfast tomorrow!"
+		if (@hours < 8 && @breakfast == "yes")
+			@emotion = "sleepy - but at least you had breakfast"
+			@suggestion = "Try getting at least #{8-@hours} more hours of sleep tomorrow!"
+		if (@hours < 8 && @breakfast == "no")
+			@emotion = "angry"
+			@suggestion = "Try eating breakfast and getting at least #{8-@hours} more hour(s) of sleep tomorrow!"
 
-		print "I bet you're feeling #{emotion} today! "
+		print "I bet you're feeling #{@emotion} today, #{name}! #{@suggestion}"
 	end
 
-	def suggestion
-		suggestion = "Keep up the good work!" if @emotion = "happy"
-		suggestion = "Try eating breakfast tomorrow!" if @emotion = "hungry but well-rested"
-		suggestion = "Try getting at least #{8-@hours.to_i} more hours of sleep tomorrow!" if @emotion = "sleepy - but at least you had breakfast"
-		suggestion = "Try eating breakfast and getting at least #{8-@hours.to_i} more hour(s) of sleep tomorrow!" if @emotion = "angry"
-
-		puts "#{suggestion}"
-	end
 end
 
 Daniel = Person.new
+	# => What's your name?
+		# => daniel
 	# => How many hours of sleep did you get last night?
 		# => 7
 	# => Did you eat breakfast?
