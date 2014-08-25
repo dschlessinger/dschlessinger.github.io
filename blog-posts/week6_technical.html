@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="font">
+
+	<head>
+		<html lang="en">
+
+		<!-- General Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-stylesheet.css">
+
+		<!-- iPads (portrait and landscape) Stylesheet -->
+		<link media= "only screen and (min-device-width:768px) and (max-device-width:1024px)" rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-ipad-portrait-and-landscape-stylesheet.css">
+
+		<!-- Smartphones (portrait and landscape) Stylesheet -->
+		<link media="only screen and (min-device-width : 320px) and (max-device-width : 480px)" rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-smartphone-portrait-and-landscape-stylesheet.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Tangerine|Roboto:400,300,500,400italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=desert"></script>
+
+		<title>DBC Technical Blog: Week 6</title>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="center"><a href="../index.html">Daniel Schlessinger's Dev Bootcamp Blog</a></h1>
+			<ul class="nav">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../technical_index.html">Technical Blog</a></li>
+				<li><a href="../cultural_index.html">Cultural Blog</a></li>
+				<li><a href="../about.html">About</a></p></li>
+			</ul>
+		</header>
+
+		<article>
+			<h1 class="center"><a href="../technical_index.html">Technical Blog</a>: Week 5</h1>
+			<h2 class="center">Ruby Classes<h2>
+			<h3 class="center"><i>August 17, 2014</i></h3>
+			<hr class="shorthr">
+			<br>
+			<p>Although Ruby's built in classes have a lot of built in functionality, we need the ability to model real life events and objects with their own properties. It's only natural, then, that we can create categories of real life objects called Ruby <em>classes</em>, and instantiate them with examples. Remember <b>D.R.Y.</b> - <b>D</b>on't <b>R</b>epeat <b>Y</b>ourself. So if we're going to be using the same object functionality more than once, it's probably a good idea to just make a class for it. Let's say we wanted to model your happiness throughout the day based on hunger and sleep:</p>
+
+			<div class="code">
+<pre class="prettyprint">
+class Person
+
+	def initialize
+		puts "How many hours of sleep did you get last night? "
+		@hours = gets.chomp
+
+		puts "Did you eat breakfast? "
+		@breakfast = gets.chomp
+	end
+
+end
+
+Daniel = Person.new
+</pre>
+			</div>
+
+			<p>You first would define an initialize method as above. I chose to use the gets method to ask for user input, but you could easily supply the initialize function with arguments and then call them like so:</p>
+
+
+			<div class="code">
+<pre class="prettyprint">
+class Person
+
+	def initialize(hours, breakfast)
+		@hours = hours
+		@breakfast = breakfast
+	end
+
+end
+
+Daniel = Person.new(8, "no")
+</pre>
+			</div>
+
+			<p>Now imagine we add some methods to the class. We can use the private method to make the methods called within the happiness method invisible to the user. Breaking up the emotion and suggestion method make code easier to edit and read if we need to modify it in the future. Here is our final result:</p>
+
+			<div class="code">
+<pre class="prettyprint">
+class Person
+
+	def initialize
+		puts "What's your name?"
+		@name = gets.chomp
+
+		puts "How many hours of sleep did you get last night? "
+		@hours = gets.chomp
+
+		puts "Did you eat breakfast? "
+		@breakfast = gets.chomp
+	end
+
+	def happiness
+		statement
+	end
+
+	private # Everything after this line will be inaccessible to the user but accessible to the happiness method.
+
+	def statement
+		@name = name.capitalize
+		@hours = @hours.to_i
+		@breakfast = @breakfast.downcase
+
+		if (@hours >= 8 && @breakfast == "yes")
+			@emotion = "happy"
+			@suggestion = "Keep up the good work!"
+		if (@hours >= 8 && @breakfast == "no")
+			@emotion = "hungry but well-rested"
+			@suggestion = "Try eating breakfast tomorrow!"
+		if (@hours < 8 && @breakfast == "yes")
+			@emotion = "sleepy - but at least you had breakfast"
+			@suggestion = "Try getting at least #{8-@hours} more hours of sleep tomorrow!"
+		if (@hours < 8 && @breakfast == "no")
+			@emotion = "angry"
+			@suggestion = "Try eating breakfast and getting at least #{8-@hours} more hour(s) of sleep tomorrow!"
+
+		print "I bet you're feeling #{@emotion} today, #{name}! #{@suggestion}"
+	end
+
+end
+
+Daniel = Person.new
+	# => What's your name?
+		# => daniel
+	# => How many hours of sleep did you get last night?
+		# => 7
+	# => Did you eat breakfast?
+		# => yes
+
+Daniel.happiness
+	# => I bet you're feeling sleepy - but at least you had breakfast today! Try getting at least 1 more hour(s) of sleep tomorrow!
+</pre>
+			</div>
+
+			<br>
+			<hr class="shorthr">
+		</article>
+
+		<footer>
+			<ul class="social">
+				<li><a href="mailto:schlessinger.daniel@gmail.com" target="_blank">
+					<img src="../unit1_projects/images/social-email.png" alt="email" style="max-width:50px"></a></li>
+				<li><a href="https://www.linkedin.com/pub/daniel-schlessinger/34/9a2/a96/" target="_blank">
+					<img src="../unit1_projects/images/social-linkedin.png" alt="linked-in" style="max-width:50px"></a></li>
+				<li><a href="https://github.com/dschlessinger/" target="_blank">
+					<img src="../unit1_projects/images/social-github.png" alt="github" style="max-width:50px"></a></li>
+				<li><a href="https://plus.google.com/+DanielSchlessinger/" target="_blank">
+					<img src="../unit1_projects/images/social-googleplus.png" alt="google+" style="max-width:50px"></a></li>
+				<li><a href="https://www.facebook.com/schlessinger.daniel/" target="_blank">
+					<img src="../unit1_projects/images/social-facebook.png" alt="facebook" style="max-width:50px"></a></li>
+				<li><a href="https://twitter.com/dschless/" target="_blank">
+					<img src="../unit1_projects/images/social-twitter.png" alt="twitter" style="max-width:50px"></a></li>
+				<li><a href="https://instagram.com/djdschless/" target="_blank">
+					<img src="../unit1_projects/images/social-instagram.png" alt="instagram" style="max-width:50px"></a></li>
+			</ul>
+		</footer>
+
+	<body>
+
+<html/>

@@ -111,6 +111,11 @@
 		background: url(../images/cultural.jpg)
 	}
 
+	.other {
+		background-size: cover;
+		background: url(../images/other.jpg)
+	}
+
 
 
 
