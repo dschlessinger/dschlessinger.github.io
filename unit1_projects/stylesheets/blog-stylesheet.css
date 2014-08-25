@@ -103,17 +103,17 @@
 
 	.technical {
 		background-size: cover;
-		background: url(../images/technical.jpg)
+		background: url(../images/technical.png)
 		}
 
 	.cultural {
 		background-size: cover;
-		background: url(../images/cultural.jpg)
+		background: url(../images/cultural.png)
 	}
 
 	.other {
 		background-size: cover;
-		background: url(../images/other.jpg)
+		background: url(../images/other.png)
 	}
 
 
@@ -140,6 +140,7 @@
 		header h1 {
 			color: #fff;
 			font-size: 3em;
+			padding: 2.5% 0 2.5% 0;
 			}
 
 			header h1 a {
@@ -198,11 +199,12 @@
 
 	.index_table td {
 		border-radius: 20px;
+		vertical-align: middle;
 	}
 
 
 /* =========================================== */
-/* INDEX */
+/* COLUMNS */
 /* =========================================== */
 
 	outsidecolumn {
@@ -454,3 +456,99 @@
 					color: #c00;
 					background-color: #fff;
 					}
+
+
+
+
+/* =========================================== */
+/* INDEX FILTER */
+/* =========================================== */
+
+.blogFilter {
+	font-size: 1.5em;
+	display: block;
+	margin: 0 auto 2.5% auto;
+	text-align: center;
+}
+.blogFilter a {
+    margin-right: 10px;
+    color: black;
+    text-decoration:none;
+}
+
+.blogFilter a.current {
+    font-weight:bold;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+
+
+
+/* =========================================== */
+/* INDEX */
+/* =========================================== */
+
+#blog-wrapper {
+	margin: 5% auto 5% auto;
+	width: 70%;
+}
+
+.post {
+    width: 30%;
+    margin: 1.5%;
+    font-weight: lighter;
+    background-size: cover;
+    background-position: center center;
+	border-radius: 10px;
+}
+
+    .post a, p, h4 {
+        color: black;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        background: white;
+        font-weight: lighter;
+    }
+
+    .post a {
+        vertical-align: middle;
+    }
+
+    .post h4 {
+        font-size: 1.5em;
+        margin: 25% 0 0 0;
+    }
+
+    .post p {
+        margin: 0 0 25% 0;
+    }
+
+.technical {background-image: url('../images/technical.png')}
+
+.cultural {background-image: url('../images/cultural.png')}
+
+.project {background-image: url('../images/project.png')}
