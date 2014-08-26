@@ -55,4 +55,34 @@ $.fn.scrollFun = function () {
 		}
 	});
 };
+
 $('.scroll').scrollFun();
+
+	$(document).on("scroll", function(){
+		if($(document).scrollTop() > 80){
+			$("header").addClass("shrink");
+			updateSliderMargin();
+		}
+		else
+		{
+			$("header").removeClass("shrink");
+			updateSliderMargin();
+		}
+	});
+
+var $container = $('.blogContainer')
+// initialize Isotope
+$container.isotope({
+  // options...
+  resizable: true, // disable normal resizing
+  // set columnWidth to a percentage of container width
+  masonry: { columnWidth: $container.width() / 3 }
+});
+
+// update columnWidth on window resize
+$(window).smartresize(function(){
+  $container.isotope({
+    // update columnWidth to a percentage of container width
+    masonry: { columnWidth: $container.width() / 3 }
+  });
+});

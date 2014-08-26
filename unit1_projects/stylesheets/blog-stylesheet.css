@@ -77,6 +77,7 @@ header {
 	z-index: 1000;
 }
 
+
 	header a:visited {
 		text-decoration: none;
 		color: black;
@@ -84,13 +85,32 @@ header {
 
 	header h1 {
 		font-family: Josefin Sans;
-		font-size: 2em;
+		font-size: 2.5em;
 		margin-left: 10px;
 		margin-top: 8px;
 		float: left;
 		text-decoration: none;
 		border-right: 1 solid gray;
 		color: black;
+
+		-webkit-transition: font-size 0.1s ease;
+		-moz-transition: font-size 0.1s ease;
+		-o-transition: font-size 0.1s ease;
+		-ms-transition: font-size 0.1s ease;
+		z-index: 9999
+		top: 0
+		position: fixed
+	}
+
+	header.shrink h1{
+		font-size: 2em;
+		-webkit-transition: scale (0.6);
+		-moz-transition: scale (0.6);
+		-o-transition: scale (0.6);
+		-ms-transition: scale (0.6);
+		z-index: 9999
+		top: 0
+		position: fixed
 	}
 
 		header h1 a {
@@ -105,10 +125,18 @@ header {
 
 	header h3 {
 		margin-right: 20px;
-		margin-top: 14px;
+		margin-top: 18px;
 		float: right;
 		text-decoration: none;
 		color: black;
+
+		-webkit-transition: all 0.1s ease;
+		-moz-transition: all 0.1s ease;
+		-o-transition: all 0.1s ease;
+		-ms-transition: all 0.1s ease;
+		z-index: 9999
+		top: 0
+		position: fixed
 	}
 
 		header h3 a {
@@ -125,6 +153,16 @@ header {
 			background-color: gray; !important;
 		}
 
+		header.shrink h3{
+		margin-top: 14px;
+		-webkit-transition: scale (0.6);
+		-moz-transition: scale (0.6);
+		-o-transition: scale (0.6);
+		-ms-transition: scale (0.6);
+		z-index: 9999
+		top: 0
+		position: fixed
+	}
 
 
 
