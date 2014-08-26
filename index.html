@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="font">
+
+	<head>
+		<html lang="en">
+		<!-- Reset.css -->
+		<link rel="stylesheet" type="text/css" href="reset.css">
+
+		<!-- General Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/blog-stylesheet.css">
+
+		<!-- iPads (portrait and landscape) Stylesheet -->
+		<link media= "only screen and (min-device-width:768px) and (max-device-width:1024px)" rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/blog-ipad-portrait-and-landscape-stylesheet.css">
+
+		<!-- Smartphones (portrait and landscape) Stylesheet -->
+		<link media="only screen and (min-device-width : 320px) and (max-device-width : 480px)" rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/blog-smartphone-portrait-and-landscape-stylesheet.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Tangerine|Roboto:400,300,500,400italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans:400,400italic,600,600italic,300,300italic|Old+Standard+TT:400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=desert"></script>
+		<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+		<script type="text/javascript" src="scripts/masonry.min.js"></script>
+		<script type="text/javascript" src="scripts/isotope.js"></script>
+		<script src="scripts/jquery.isotope.min.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+			$(window).load(function(){
+			    var $container = $('.blogContainer');
+			    $container.isotope({
+			        filter: '*',
+			        animationOptions: {
+			            duration: 750,
+			            easing: 'linear',
+			            queue: false
+			        }
+			    });
+
+			    $('.blogFilter a').click(function(){
+			        $('.blogFilter .current').removeClass('current');
+			        $(this).addClass('current');
+
+			        var selector = $(this).attr('data-filter');
+			        $container.isotope({
+			            filter: selector,
+			            animationOptions: {
+			                duration: 750,
+			                easing: 'linear',
+			                queue: false
+			            }
+			         });
+			         return false;
+			    });
+			});
+		</script>
+
+		<title>Dev Bootcamp Blog</title>
+	</head>
+
+	<body>
+		<header>
+			<h1><a href="index.html">DANIEL SCHLESSINGER</a></h1>
+			<h3><a href="about.html">ABOUT</a></h3>
+		</header>
+
+		<div id="blog-wrapper">
+			<div class="blogFilter">
+			    <a href="#blog" data-filter="*" class="current">All</a>
+			    <a href="#technical" data-filter=".technical">Technical</a>
+			    <a href="#cultural" data-filter=".cultural">Cultural</a>
+			    <a href="#projects" data-filter=".project">Projects</a>
+			</div>
+
+			<div class="blogContainer">
+				<div id="week-6-cultural" class="post cultural">
+					<a href="blog-posts/week6_cultural.html" target="_blank">
+						<h4>Week 6: Cultural Blog</h4>
+						<p>Stereotype Threat</p>
+					</a>
+				</div>
+
+				<div id="week-6-technical" class="post technical">
+					<a href="blog-posts/week6_technical.html" target="_blank">
+						<h4>Week 6: Technical Blog</h4>
+						<p>Inheritance vs. Composition</p>
+					</a>
+				</div>
+
+				<div id="week-5-cultural" class="post cultural">
+					<a href="blog-posts/week5_cultural.html" target="_blank">
+						<h4>Week 5: Cultural Blog</h4>
+						<p>Lessons in Pairing</p>
+					</a>
+				</div>
+
+				<div id="week-5-technical" class="post technical">
+					<a href="blog-posts/week5_technical.html" target="_blank">
+						<h4>Week 5: Technical Blog</h4>
+						<p>Ruby Classes</p>
+					</a>
+				</div>
+
+				<div id="week-4-cultural" class="post cultural">
+					<a href="blog-posts/week4_cultural.html" target="_blank">
+						<h4>Week 4: Cultural Blog</h4>
+						<p>Problems in the Tech Industry: Sublime Text</p>
+					</a>
+				</div>
+
+				<div id="week-4-technical" class="post technical">
+					<a href="blog-posts/week4_technical.html" target="_blank">
+						<h4>Week 4: Technical Blog</h4>
+						<p>Public Ruby Methods: #Map</p>
+					</a>
+				</div>
+
+				<div id="week-3-cultural" class="post cultural">
+					<a href="blog-posts/week3_cultural.html" target="_blank">
+						<h4>Week 3: Cultural Blog</h4>
+						<p>Thinking Styles and Learning</p>
+					</a>
+				</div>
+
+				<div id="week-3-technical" class="post technical">
+					<a href="blog-posts/week3_technical.html" target="_blank">
+						<h4>Week 3: Technical Blog</h4>
+						<p>JavaScript in Web Development</p>
+					</a>
+				</div>
+
+				<div id="week-2-wireframe" class="post project">
+					<a href="blog-posts/blog-posts/week2_wireframe.html" target="_blank">
+						<h4>Week 2: Project</h4>
+						<p>Blog Wireframe Update</p>
+					</a>
+				</div>
+
+				<div id="week-2-technical" class="post technical">
+					<a href="blog-posts/week2_technical.html" target="_blank">
+						<h4>Week 2: Technical Blog</h4>
+						<p>Margins vs. Borders vs. Padding</p>
+					</a>
+				</div>
+
+				<div id="week-2-women-in-computing" class="post project">
+					<a href="unit1_projects/class1/completed/index.html" target="_blank">
+						<h4>Week 2: Project</h4>
+						<p>Women in Computing</p>
+					</a>
+				</div>
+
+				<div id="week-2-responsive-pair-challenge" class="post project">
+					<a href="blog-posts/starting_point.html" target="_blank">
+						<h4>Week 2: Pair Challenge</h4>
+						<p>Responsive Website Design</p>
+					</a>
+				</div>
+
+				<div id="week-1-technical" class="post technical">
+					<a href="blog-posts/week1_technical.html" target="_blank">
+						<h4>Week 1: Technical Blog</h4>
+						<p>3 Favorite Websites</p>
+					</a>
+				</div>
+
+				<div id="week-1-cultural" class="post cultural">
+					<a href="blog-posts/week1_cultural.html" target="_blank">
+						<h4>Week 1: Cultural Blog</h4>
+						<p>Shereef's Fireside Chat</p>
+					</a>
+				</div>
+
+				<div id="week-1-basic-html-site" class="post project">
+					<a href="unit1_projects/dbc2.html" target="_blank">
+						<h4>Week 1: Project</h4>
+						<p>Basic HTML Site</p>
+					</a>
+				</div>
+
+				<div id="week-1-solo-challenge" class="post project">
+					<a href="unit1_projects/dbc2.html" target="_blank">
+						<h4>Week 1: Solo Challenge</h4>
+						<p>How to Make Gaucamole</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<ul class="social">
+				<li><a href="mailto:schlessinger.daniel@gmail.com" target="_blank">
+					<img src="unit1_projects/images/social-email.png" alt="email" style="max-width:50px"></a></li>
+				<li><a href="https://www.linkedin.com/pub/daniel-schlessinger/34/9a2/a96/" target="_blank">
+					<img src="unit1_projects/images/social-linkedin.png" alt="linked-in" style="max-width:50px"></a></li>
+				<li><a href="https://github.com/dschlessinger/" target="_blank">
+					<img src="unit1_projects/images/social-github.png" alt="github" style="max-width:50px"></a></li>
+				<li><a href="https://plus.google.com/+DanielSchlessinger/" target="_blank">
+					<img src="unit1_projects/images/social-googleplus.png" alt="google+" style="max-width:50px"></a></li>
+				<li><a href="https://www.facebook.com/schlessinger.daniel/" target="_blank">
+					<img src="unit1_projects/images/social-facebook.png" alt="facebook" style="max-width:50px"></a></li>
+				<li><a href="https://twitter.com/dschless/" target="_blank">
+					<img src="unit1_projects/images/social-twitter.png" alt="twitter" style="max-width:50px"></a></li>
+				<li><a href="https://instagram.com/djdschless/" target="_blank">
+					<img src="unit1_projects/images/social-instagram.png" alt="instagram" style="max-width:50px"></a></li>
+			</ul>
+		</footer>
+
+	<body>
+
+<html/>
