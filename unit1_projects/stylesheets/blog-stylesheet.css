@@ -583,7 +583,7 @@ header {
 /* =========================================== */
 
 #contact {
-	padding: 5% 0 5% 10%;
+	padding: 2.5% 0 2.5% 10%;
 	background-color: white;
 	}
 
@@ -606,9 +606,15 @@ header {
 			width: 50px;
 			}
 
-#copyright p {
-	text-align: center;
-	display: block;
-	margin:0 auto;
-	background-color: white;
+#copyright {
+	background: white;
+	padding-bottom: 2.5%;
 }
+
+	#copyright p {
+		background: white;
+		text-align: center;
+		display: block;
+		margin:0 auto;
+		background-color: white;
+	}
