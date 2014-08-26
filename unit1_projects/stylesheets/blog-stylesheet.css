@@ -40,6 +40,7 @@
 
 	.shorthr {
 		width: 100%;
+		color: rgb(220,220,220);
 		}
 
 	.stickfigure {
@@ -53,68 +54,6 @@
 		margin-right: auto;
 		margin-left: auto;
 		}
-
-	table {
-		margin: auto;
-		border-collapse: separate;
-        border-spacing: 2em;
-		}
-
-		table td {
-			width: 10em;
-			height: 15em;
-			word-wrap: break-word;
-			border-style: solid;
-			border-color: black;
-			border-width: 1px;
-			border: 1;
-			opacity: 0.5;
-			padding: 0;
-		}
-
-			table td:hover {
-				opacity: 1;
-			}
-
-			table td a {
-				margin: 0 0 0 0;
-				display: block;
-				width: 100%;
-				text-decoration: none;
-				color: black;
-				opacity: 1; !important;
-			}
-
-			table td p, h4 {
-				display: block;
-				color: black;
-				background: white;
-				padding: 5px;
-				clear: right;
-				margin: 0;
-				text-align: center;
-				font-weight: lighter;
-				opacity: 1; !important;
-			}
-
-			table td h4 {
-				font-size: 1.5em;
-			}
-
-	.technical {
-		background-size: cover;
-		background: url(../images/technical.png)
-		}
-
-	.cultural {
-		background-size: cover;
-		background: url(../images/cultural.png)
-	}
-
-	.other {
-		background-size: cover;
-		background: url(../images/other.png)
-	}
 
 
 
@@ -132,104 +71,63 @@ header {
 	position: fixed;
 	display: block;
 	width: 100%;
-	height: 20%;
-	background-color: #3399FF;
+	background-image: url('../images/background.png');
 	border-bottom: 1 solid gray;
 	text-decoration: none;
-	color: white;
+	color: black;
 	z-index: 1000;
 }
 
 	header a:visited {
 		text-decoration: none;
-		color: white;
+		color: black;
 	}
 
 	header h1 {
 		font-family: Josefin Sans;
 		font-size: 2em;
 		margin-left: 10px;
-		margin-top: 14px;
+		margin-top: 8px;
 		float: left;
 		text-decoration: none;
-		padding-right: 2.5%;
 		border-right: 1 solid gray;
+		color: black;
 	}
 
 		header h1 a {
 			text-decoration: none;
+			color: black;
 		}
 
 		header h1 a:visited {
 			text-decoration: none;
-			color: white;
+			color: black;
 		}
 
 	header h3 {
-		margin-right: 40px;
-		margin-top: 20px;
+		margin-right: 20px;
+		margin-top: 14px;
 		float: right;
 		text-decoration: none;
+		color: black;
 	}
 
 		header h3 a {
 			text-decoration: none;
+			color: black;
 		}
 
 		header h3 a:visited {
 			text-decoration: none;
-			color:;
+			color: black;
+		}
+
+		header h3: a:hover {
+			background-color: gray; !important;
 		}
 
 
 
-
-/* =========================================== */
-/* NAVIGATION */
-/* =========================================== */
-
-	.nav {
-		width: 100%;
-		float: left;
-		margin: 0;
-		padding: 0 0 1em 0;
-		list-style-type: none;
-		}
-
-	.nav li {
-		float: left;
-		width: 25%;
-		}
-
-		.nav li a {
-			display: block;
-			text-align: center;
-			text-decoration: none;
-			}
-
-			.nav li a:hover {
-				color: #c00; !important;
-				background-color: #fff;
-				}
-
-			.nav li a:visited {
-				color: blue;
-				}
-
-/* =========================================== */
-/* INDEX TABLE */
-/* =========================================== */
-
-.index_table {
-	width: 70%;
-	margin: 0px auto;
-	text-align: center;
-}
-
-	.index_table td {
-		border-radius: 20px;
-		vertical-align: middle;
-	}
 
 
 /* =========================================== */
@@ -450,41 +348,29 @@ header {
 /* FOOTER */
 /* =========================================== */
 
-	footer {
-		background-color: #3399FF;
-		width: 90%;
-		height: 15%;
-		margin-top: 5%;
-		margin-bottom: 2.5%;
-		margin-left: auto;
-		margin-right: auto;
-		border-style: solid;
-		border-width: 5px;
-		padding: 10px 10px 60px 10px;
-		}
+#contact {
+	padding: 5% 0 5% 10%;
+	background-color: white;
+	}
 
-	.social {
-		width: 100%;
+.social {
+	width: 100%;
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 auto;
+	}
+
+	.social li {
+		text-align: center;
 		float: left;
-		margin: 0 0 3em 0;
-		padding: 0;
-		list-style-type: none;
+		width: 14.28%;
 		}
 
-		.social li {
-			text-align: center;
-			float: left;
-			width: 14.28%;
+		.social li a {
+			display: block;
+			width: 50px;
 			}
-
-			.social li a {
-				display: block;
-				}
-
-				.social li a:hover {
-					color: #c00;
-					background-color: #fff;
-					}
 
 
 
@@ -498,15 +384,33 @@ header {
 	display: block;
 	margin: 0 auto 2.5% auto;
 	text-align: center;
+	padding:0 0 6px 0;
+	position:relative;
+	margin-left:250px;
+	margin-right:250px;
+	border-bottom:1px solid rgb(220,220,220);
+	z-index:50;
 }
+
 .blogFilter a {
     margin-right: 10px;
     color: black;
     text-decoration:none;
+    display: inline;
+	padding:5px 10px 8px 10px;
+	border-left:1px solid rgb(220,220,220);
+	border-top:1px solid rgb(220,220,220);
+	border-right:1px solid rgb(220,220,220);
+	cursor:pointer;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	font-family: Helvetica;
+	font-size:1em;
+	font-weight: lighter;
 }
 
 .blogFilter a.current {
-    font-weight:bold;
+    background-color:rgb(220,220,220);
 }
 
 .isotope-item {
@@ -536,12 +440,19 @@ header {
 
 
 
+
 /* =========================================== */
 /* INDEX */
 /* =========================================== */
 
-#blog-wrapper {
-	margin: 5% auto 5% auto;
+#blog {
+	width: 100%;
+	padding: 7.5% 0 7.5% 0;
+	background-color: #F8F8F8;
+}
+
+.blog {
+	margin: 0 auto;
 	width: 70%;
 }
 
@@ -554,7 +465,7 @@ header {
 	border-radius: 10px;
 }
 
-    .post a, p, h4 {
+    .post a, .post p, .post h4 {
         color: black;
         text-align: center;
         vertical-align: middle;
@@ -581,3 +492,68 @@ header {
 .cultural {background-image: url('../images/cultural.png')}
 
 .project {background-image: url('../images/project.png')}
+
+
+
+
+
+/* =========================================== */
+/* ABOUT */
+/* =========================================== */
+
+#about {
+	padding-top: 10%;
+	width: 100%;
+	background-color: white;
+	padding-bottom: 5%;
+}
+
+.about {
+	width:70%;
+	height:auto;
+	overflow:auto;
+	margin:0 auto 0 auto;
+}
+
+.one-third {
+	width:29%;
+	overflow:visible;
+	height:auto;
+	float:left;
+	line-height:1.5em;
+	text-align:center;
+	font-family: Helvetica;
+	font-weight:700;
+	text-transform: uppercase;
+}
+
+.photo {
+	width:350px;
+	border-radius: 20px;
+	margin:0 auto 40px auto;
+	display:inline-block;
+}
+
+.two-third {
+	width:58%;
+	margin-top: 1.5%;
+	float:right;
+	padding:20px 0;
+	border-top:1px solid rgb(220,220,220);
+	border-bottom:1px solid rgb(220,220,220);
+}
+
+	.two-third i {
+		font-family: helvetica;
+		font-style: italic;
+	}
+
+	.two-third span {
+		font-family: helvetica;
+		font-weight: bold;
+	}
+
+	.two-third ul {
+		margin-left: 40px;
+		list-style-type: initial;
+	}
