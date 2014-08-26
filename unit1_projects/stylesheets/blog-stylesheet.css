@@ -484,7 +484,6 @@ header {
 	}
 
 	section {
-		font-family: Courier; monospace;
 		width: 90%;
 		margin-top: auto;
 		margin-right: auto;
@@ -496,20 +495,7 @@ header {
 				color: blue;
 			}
 
-		section p {
-			font-family: Roboto
-		}
-
-		section ol {
-			font-family: Roboto
-		}
-
-		section ul {
-			font-family: Roboto
-		}
-
 	article {
-		font-family: Courier; monospace;
 		width: 60%;
 		margin-top: 5%;
 		margin-right: auto;
@@ -521,37 +507,17 @@ header {
 			font-size: 2em;
 		}
 
-			article h1 a:visited {
+			article h1 a:visited, article ol li a:visited, article ul li a:visited {
 				color: blue;
+			}
+
+			article ol li, article ul li {
+				padding-bottom: 1em;
 			}
 
 		article p {
-			font-family: Roboto
+			padding-bottom: 10px;
 		}
-
-		article ol {
-			font-family: Roboto
-		}
-
-			article ol li {
-				padding-bottom: 1em;
-			}
-
-				article ol li a: visited{
-				color: blue;
-			}
-
-		article ul {
-			font-family: Roboto
-		}
-
-			article ul li {
-				padding-bottom: 1em;
-			}
-
-				article ul li a: visited{
-				color: blue;
-			}
 
 		article iframe {
 			margin-left:auto;
