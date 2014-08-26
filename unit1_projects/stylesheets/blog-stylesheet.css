@@ -299,9 +299,9 @@ header {
 }
 .isotope,
 .isotope .isotope-item {
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
 }
 .isotope {
     -webkit-transition-property: height, width;
@@ -340,12 +340,7 @@ header {
     background-size: cover;
     background-position: center center;
 	border-radius: 10px;
-	opacity: 0.6;
 }
-
-	.post:hover {
-		opacity: 1;
-	}
 
     .post a, .post p, .post h4 {
         color: black;
@@ -513,11 +508,6 @@ header {
 			padding-bottom: 3px;
 		}
 
-			article h1 a {
-				color: black;
-				text-decoration: none;
-			}
-
 		article h2 {
 			font-size: 1.5em;
 			padding-bottom: 3px;
@@ -536,11 +526,6 @@ header {
 			margin-right:auto;
 			display:block
 		}
-
-			article h1 a:visited {
-				color: black;
-				text-decoration: none;
-			}
 
 			article ol li a:visited, article ul li a:visited {
 				color: blue;
