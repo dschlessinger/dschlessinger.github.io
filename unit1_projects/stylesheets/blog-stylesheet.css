@@ -505,6 +505,26 @@ header {
 
 		article h1 {
 			font-size: 2em;
+			padding-bottom: 3px;
+		}
+
+		article h2 {
+			font-size: 1.5em;
+			padding-bottom: 3px;
+		}
+
+		article h3 {
+			font-style: italic
+		}
+
+		article p {
+			padding: 10px 0 10px 0;
+		}
+
+		article iframe {
+			margin-left:auto;
+			margin-right:auto;
+			display:block
 		}
 
 			article h1 a:visited, article ol li a:visited, article ul li a:visited {
@@ -515,15 +535,7 @@ header {
 				padding-bottom: 1em;
 			}
 
-		article p {
-			padding-bottom: 10px;
-		}
 
-		article iframe {
-			margin-left:auto;
-			margin-right:auto;
-			display:block
-		}
 
 	.imgcenter {
 		vertical-align: middle;
@@ -558,9 +570,14 @@ header {
 /* FOOTER */
 /* =========================================== */
 
-#contact {
+#index-contact {
 	padding: 5% 0 5% 10%;
 	background-color: white;
+	}
+
+#contact {
+	padding: 5% 0 5% 10%;
+	background-color: #F8F8F8;
 	}
 
 .social {
