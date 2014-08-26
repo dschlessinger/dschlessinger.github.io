@@ -383,8 +383,8 @@ header {
 }
 
 	.post:hover {
-
-    }
+		opacity: 0.5;
+	}
 
     .post a, .post p, .post h4 {
         color: black;
@@ -414,9 +414,8 @@ header {
 
 .project {background-image: url('../images/project.png')}
 
-.post:hover {
-	background-color:rgba(21,24,33,0.6);
-}
+
+
 
 /* =========================================== */
 /* COLUMNS */
