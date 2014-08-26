@@ -242,8 +242,13 @@ header {
 	right: 0;
 	height: 45px;
 	width: 45px;
-	margin: 0 auto;
+	margin: 0 auto 5px auto;
 	border-radius: 45px;
+
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
 }
 
 .arow_top {
@@ -260,6 +265,25 @@ header {
 	transform: rotate(180deg);
 }
 
+	.arow_down:hover {
+		border: 1px solid black;
+		border-radius: 50%;
+	}
+
+	.arow_down svg {
+		padding-top: 13px;
+		padding-left: 1px;
+	}
+
+	.arow_top:hover {
+		border: 1px solid black;
+		border-radius: 50%;
+	}
+
+	.arow_top svg {
+		padding-top: 13px;
+		padding-left: 1px;
+	}
 
 
 
