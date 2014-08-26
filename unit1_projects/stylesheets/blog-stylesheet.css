@@ -71,16 +71,17 @@ header {
 	position: fixed;
 	display: block;
 	width: 100%;
-	background-image: url('../images/background.png');
+	background-color: #3399FF;
+	/*background-image: url('../images/background.png');*/
 	text-decoration: none;
-	color: black;
+	color: white;
 	z-index: 1000;
 }
 
 
 	header a:visited {
 		text-decoration: none;
-		color: black;
+		color: white;
 	}
 
 	header h1 {
@@ -91,7 +92,7 @@ header {
 		float: left;
 		text-decoration: none;
 		border-right: 1 solid gray;
-		color: black;
+		color: white;
 
 		-webkit-transition: font-size 0.1s ease;
 		-moz-transition: font-size 0.1s ease;
@@ -115,12 +116,12 @@ header {
 
 		header h1 a {
 			text-decoration: none;
-			color: black;
+			color: white;
 		}
 
 		header h1 a:visited {
 			text-decoration: none;
-			color: black;
+			color: white;
 		}
 
 	header h3 {
@@ -128,7 +129,7 @@ header {
 		margin-top: 18px;
 		float: right;
 		text-decoration: none;
-		color: black;
+		color: white;
 
 		-webkit-transition: all 0.1s ease;
 		-moz-transition: all 0.1s ease;
@@ -141,12 +142,12 @@ header {
 
 		header h3 a {
 			text-decoration: none;
-			color: black;
+			color: white;
 		}
 
 		header h3 a:visited {
 			text-decoration: none;
-			color: black;
+			color: white;
 		}
 
 		header h3: a:hover {
@@ -154,15 +155,15 @@ header {
 		}
 
 		header.shrink h3{
-		margin-top: 14px;
-		-webkit-transition: scale (0.6);
-		-moz-transition: scale (0.6);
-		-o-transition: scale (0.6);
-		-ms-transition: scale (0.6);
-		z-index: 9999
-		top: 0
-		position: fixed
-	}
+			margin-top: 14px;
+			-webkit-transition: scale (0.6);
+			-moz-transition: scale (0.6);
+			-o-transition: scale (0.6);
+			-ms-transition: scale (0.6);
+			z-index: 9999
+			top: 0
+			position: fixed
+		}
 
 
 
@@ -581,11 +582,6 @@ header {
 /* FOOTER */
 /* =========================================== */
 
-#index-contact {
-	padding: 5% 0 5% 10%;
-	background-color: white;
-	}
-
 #contact {
 	padding: 5% 0 5% 10%;
 	background-color: white;
@@ -609,3 +605,10 @@ header {
 			display: block;
 			width: 50px;
 			}
+
+#copyright p {
+	text-align: center;
+	display: block;
+	margin:0 auto;
+	background-color: white;
+}
