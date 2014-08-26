@@ -4,16 +4,16 @@
 	<head>
 		<html lang="en">
 		<!-- Reset.css -->
-		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="../reset.css">
 
 		<!-- General Stylesheet -->
-		<link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/blog-stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-stylesheet.css">
 
 		<!-- iPads (portrait and landscape) Stylesheet -->
-		<link media= "only screen and (min-device-width:768px) and (max-device-width:1024px)" rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/blog-ipad-portrait-and-landscape-stylesheet.css">
+		<link media= "only screen and (min-device-width:768px) and (max-device-width:1024px)" rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-ipad-portrait-and-landscape-stylesheet.css">
 
 		<!-- Smartphones (portrait and landscape) Stylesheet -->
-		<link media="only screen and (min-device-width : 320px) and (max-device-width : 480px)" rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/blog-smartphone-portrait-and-landscape-stylesheet.css">
+		<link media="only screen and (min-device-width : 320px) and (max-device-width : 480px)" rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog-smartphone-portrait-and-landscape-stylesheet.css">
 
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Tangerine|Roboto:400,300,500,400italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -22,23 +22,38 @@
 
 		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=desert"></script>
 		<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-		<script type="text/javascript" src="scripts/masonry.min.js"></script>
-		<script type="text/javascript" src="scripts/isotope.js"></script>
-		<script src="scripts/jquery.isotope.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../scripts/masonry.min.js"></script>
+		<script type="text/javascript" src="../scripts/isotope.js"></script>
+		<script src="../scripts/jquery.isotope.min.js" type="text/javascript"></script>
+
+		<script>
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+							scrollTop: target.offset().top - 40
+							}, 600);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
 
 		<title>DBC Technical Blog: Week 5</title>
 	</head>
 
 	<body>
 		<header>
-			<h1 class="center"><a href="../index.html">Daniel Schlessinger's Dev Bootcamp Blog</a></h1>
-			<ul class="nav">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../technical_index.html">Technical Blog</a></li>
-				<li><a href="../cultural_index.html">Cultural Blog</a></li>
-				<li><a href="../about.html">About</a></p></li>
-			</ul>
+			<h1><a href="../index.html">DANIEL SCHLESSINGER</a></h1>
+			<h3><a href="../index.html#about">ABOUT</a></h3>
+			<h3><a href="../index.html#blog">BLOG</a></h3>
+			<h3><a href="#contact">CONTACT</a></h3>
 		</header>
+
 
 		<article>
 			<h1 class="center"><a href="../technical_index.html">Technical Blog</a>: Week 5</h1>
@@ -147,7 +162,7 @@ Daniel.happiness
 			<hr class="shorthr">
 		</article>
 
-		<footer>
+		<div id="contact">
 			<ul class="social">
 				<li><a href="mailto:schlessinger.daniel@gmail.com" target="_blank">
 					<img src="../unit1_projects/images/social-email.png" alt="email" style="max-width:50px"></a></li>
@@ -164,7 +179,7 @@ Daniel.happiness
 				<li><a href="https://instagram.com/djdschless/" target="_blank">
 					<img src="../unit1_projects/images/social-instagram.png" alt="instagram" style="max-width:50px"></a></li>
 			</ul>
-		</footer>
+		</div>
 
 	<body>
 
