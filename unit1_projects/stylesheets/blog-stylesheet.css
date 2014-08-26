@@ -508,9 +508,8 @@ header {
 
 	article {
 		width: 60%;
-		margin-top: 5%;
-		margin-right: auto;
-		margin-left: auto;
+		margin: 3.5% auto 5% auto;
+		padding-top: 7.5%;
 		display: block;
 		}
 
@@ -589,7 +588,7 @@ header {
 
 #contact {
 	padding: 5% 0 5% 10%;
-	background-color: #F8F8F8;
+	background-color: white;
 	}
 
 .social {
