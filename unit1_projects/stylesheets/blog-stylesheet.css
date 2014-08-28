@@ -372,9 +372,7 @@ header {
 
 .filterContainer, .blogContainer {
 	width: 70%;
-	position: relative;
-	height:auto;
-	overflow:auto;
+	height: auto;
 	margin: 5% auto;
 }
 	.post {
@@ -384,7 +382,6 @@ header {
     	background-size: cover;
     	background-position: center center;
 		border-radius: 10px;
-
 	}
 
 	.post:hover {
@@ -437,23 +434,7 @@ header {
 /* =========================================== */
 /* =========================================== */
 
-@media all and (min-width:1025px) {
-	.post {
-		width:30%;
-	}
-}
-@media all and (min-width:769px) and (max-width:1024px) {
-	.post {
-		width:47%;
-	}
-	.one-third {
-		width:28%;
-	}
-	.two-third {
-		width:50%;
-	}
-}
-@media all and (max-width:768px) {
+@media all and (min-width:480px) {
 	.post {
 		width:100%;
 	}
@@ -466,6 +447,23 @@ header {
 	.two-third {
 		width:100%;
 		border:none;
+	}
+}
+@media all and (min-width:769px) {
+	.post {
+		width:47%;
+	}
+	.one-third {
+		width:28%;
+	}
+	.two-third {
+		width:50%;
+	}
+}
+
+@media all and (min-width:1024px) {
+	.post {
+		width:30%;
 	}
 }
 
