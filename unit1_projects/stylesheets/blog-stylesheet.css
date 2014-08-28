@@ -679,10 +679,10 @@ header {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	.post {
-		width:100%;
+		width:98%;
 		margin-bottom: 5%;
 		font-size: 3em;
-		border: 2px solid black;
+		border: 1% solid black;
 		border-radius: 10px;
 	}
 	.one-third {
