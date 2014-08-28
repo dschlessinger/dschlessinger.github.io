@@ -688,14 +688,14 @@ header {
 	}
 	.one-third {
 		width:70%;
-		display: block;
+		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
 		clear: both;
 	}
 	.two-third {
 		width:70%;
-		display: block;
+		display: inline-block;
 		float: left;
 		margin-left: auto;
 		margin-right: auto;
