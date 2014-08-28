@@ -684,7 +684,7 @@ header {
 		border-radius: 50%;
 	}
 	.description {
-		width:70%;
+		width:100%;
 		float: left;
 		display: block;
 		margin-left: auto;
