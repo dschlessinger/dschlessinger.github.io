@@ -682,7 +682,7 @@ header {
 		width:98%;
 		margin-bottom: 5%;
 		font-size: 3em;
-		border: 1% solid black;
+		border: 5px solid black;
 		border-radius: 10px;
 	}
 	.one-third {
