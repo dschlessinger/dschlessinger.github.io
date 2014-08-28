@@ -710,7 +710,7 @@ header {
 /* iPads */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	.post {
-		width:42%;
+		width: 42%;
 		margin: 3%;
 	}
 	.one-third {
