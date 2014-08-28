@@ -1,3 +1,8 @@
+$( window ).load( function()
+{
+    $( '.blogContainer' ).masonry( { itemSelector: '.post' } );
+});
+
 $(window).load(function(){
     var $container = $('.blogContainer');
     $container.isotope({
