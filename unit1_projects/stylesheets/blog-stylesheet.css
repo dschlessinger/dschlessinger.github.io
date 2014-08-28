@@ -677,6 +677,7 @@ header {
 /* =========================================== */
 /* =========================================== */
 
+/* iPhones */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	.post {
 		width:96%;
@@ -686,32 +687,50 @@ header {
 		border-radius: 10px;
 	}
 	.one-third {
-		display:none;
-	}
-	.photo {
-		display:block;
+		width:70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.two-third {
-		width:100%;
-		border:none;
+		width:70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.photo {
+		width: 100%;
+		display: block;
+		border-radius: 50%;
 	}
 }
+
+/* iPads */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	.post {
 		width:42%;
 		margin: 3%;
 	}
 	.one-third {
-		width:28%;
+		width:70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.two-third {
-		width:50%;
+		width:70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.photo {
-		display:none;
+		width: 100%;
+		display: block;
+		border-radius: 50%;
 	}
 }
 
+/* Other Screens */
 @media only screen and (min-width:1024px) {
 	.post {
 		width:30%;
