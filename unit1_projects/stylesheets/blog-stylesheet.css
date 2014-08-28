@@ -682,6 +682,8 @@ header {
 		width:100%;
 		margin-bottom: 5%;
 		font-size: 3em;
+		border: 2px solid black;
+		border-radius: 10px;
 	}
 	.one-third {
 		display:none;
@@ -698,7 +700,6 @@ header {
 	.post {
 		width:42%;
 		margin: 3%;
-		border: 2px solid black;
 	}
 	.one-third {
 		width:28%;
