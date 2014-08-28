@@ -428,60 +428,6 @@ header {
 
 
 
-/* =========================================== */
-/* =========================================== */
-/* =========================================== */
-/* =========================================== */
-
-@media all and (min-width:480px) {
-	.post {
-		width:100%;
-	}
-/*	.one-third {
-		display:none;
-	}
-	.photo {
-		display:block;
-	}
-	.two-third {
-		width:100%;
-		border:none;
-	}*/
-}
-@media all and (min-width:769px) {
-	.post {
-		width:47%;
-	}
-/*	.one-third {
-		width:28%;
-	}
-	.two-third {
-		width:50%;
-	}
-	.photo {
-		display:none;
-	}*/
-}
-
-@media all and (min-width:1024px) {
-	.post {
-		width:30%;
-	}
-/*	.one-third {
-		width:28%;
-	}
-	.two-third {
-		width:50%;
-	}
-	.circle-photo {
-		display:none;
-	}*/
-}
-
-/* =========================================== */
-/* =========================================== */
-/* =========================================== */
-/* =========================================== */
 
 
 
@@ -723,3 +669,60 @@ header {
 		margin:0 auto;
 		background-color: white;
 	}
+
+
+/* =========================================== */
+/* =========================================== */
+/* MEDIA QUERIES */
+/* =========================================== */
+/* =========================================== */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.post {
+		width:100%;
+	}
+	.one-third {
+		display:none;
+	}
+	.photo {
+		display:block;
+	}
+	.two-third {
+		width:100%;
+		border:none;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.post {
+		width:47%;
+	}
+	.one-third {
+		width:28%;
+	}
+	.two-third {
+		width:50%;
+	}
+	.photo {
+		display:none;
+	}
+}
+
+@media only screen and (min-width:1024px) {
+	.post {
+		width:30%;
+	}
+	.one-third {
+		width:28%;
+	}
+	.two-third {
+		width:50%;
+	}
+	.circle-photo {
+		display:none;
+	}
+}
+
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
