@@ -184,23 +184,15 @@ header {
 	margin:0 auto 0 auto;
 }
 
-.one-third {
-	width:29%;
-	height:auto;
-	float:left;
-	text-align:center;
-	font-family: Helvetica;
-	font-weight:700;
-}
-
 .photo {
 	width:350px;
+	display: block;
+	float: left;
 	border-radius: 20px;
 	margin:0 auto 40px auto;
-	display:inline-block;
 }
 
-.two-third {
+.description {
 	width:58%;
 	margin-top: 1%;
 	float:right;
@@ -209,17 +201,17 @@ header {
 	border-bottom:1px solid rgb(220,220,220);
 }
 
-	.two-third i {
+	.description i {
 		font-family: helvetica;
 		font-style: italic;
 	}
 
-	.two-third span {
+	.description span {
 		font-family: helvetica;
 		font-weight: bold;
 	}
 
-	.two-third ul {
+	.description ul {
 		margin-left: 40px;
 		list-style-type: initial;
 	}
@@ -686,24 +678,17 @@ header {
 		border: 5px solid black;
 		border-radius: 10px;
 	}
-	.one-third {
-		width:70%;
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
-		clear: both;
-	}
-	.two-third {
-		width:70%;
-		display: inline-block;
-		float: left;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.photo {
 		width: 100%;
 		display: block;
 		border-radius: 50%;
+	}
+	.description {
+		width:70%;
+		display: block;
+		float: left;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -713,22 +698,20 @@ header {
 		width: 42%;
 		margin: 3%;
 	}
-	.one-third {
-		width:70%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.two-third {
-		width:70%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.photo {
-		width: 100%;
+		width:20%;
 		display: block;
-		border-radius: 50%;
+		float: left;
+		border-radius: 5%;
+		margin:0 auto 40px auto;
+	}
+	.description {
+		width:58%;
+		margin-top: 1%;
+		float:right;
+		padding:20px 0;
+		border-top:1px solid rgb(220,220,220);
+		border-bottom:1px solid rgb(220,220,220);
 	}
 }
 
@@ -737,14 +720,20 @@ header {
 	.post {
 		width:30%;
 	}
-	.one-third {
-		width:28%;
+	.photo {
+		width:35%;
+		display: block;
+		float: left;
+		border-radius: 5%;
+		margin:0 auto 40px auto;
 	}
-	.two-third {
-		width:50%;
-	}
-	.circle-photo {
-		display:none;
+	.description {
+		width:58%;
+		margin-top: 1.5%;
+		float:right;
+		padding:20px 0;
+		border-top:1px solid rgb(220,220,220);
+		border-bottom:1px solid rgb(220,220,220);
 	}
 }
 
