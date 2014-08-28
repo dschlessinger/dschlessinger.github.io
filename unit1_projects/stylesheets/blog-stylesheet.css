@@ -679,7 +679,7 @@ header {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	.post {
-		width:98%;
+		width:96%;
 		margin-bottom: 5%;
 		font-size: 3em;
 		border: 5px solid black;
