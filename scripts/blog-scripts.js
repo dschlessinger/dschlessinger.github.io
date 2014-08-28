@@ -69,20 +69,3 @@ $('.scroll').scrollFun();
 			updateSliderMargin();
 		}
 	});
-
-var $container = $('.blogContainer')
-// initialize Isotope
-$container.isotope({
-  // options...
-  resizable: true, // disable normal resizing
-  // set columnWidth to a percentage of container width
-  masonry: { columnWidth: $container.width() / 3 }
-});
-
-// update columnWidth on window resize
-$(window).smartresize(function(){
-  $container.isotope({
-    // update columnWidth to a percentage of container width
-    masonry: { columnWidth: $container.width() / 3 }
-  });
-});

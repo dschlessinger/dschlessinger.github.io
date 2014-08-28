@@ -302,17 +302,17 @@ header {
 	text-align: center;
 	padding:0 0 6px 0;
 	position:relative;
-	margin-left:250px;
-	margin-right:250px;
+	margin-left:auto;
+	margin-right:auto;
 	border-bottom:1px solid rgb(220,220,220);
 	z-index:50;
 }
 
 .blogFilter a {
-  margin-right: 10px;
-  color: black;
-  text-decoration:none;
-  display: inline;
+	margin-right: 10px;
+	color: black;
+	text-decoration:none;
+	display: inline;
 	padding:5px 10px 8px 10px;
 	border-left:1px solid rgb(220,220,220);
 	border-top:1px solid rgb(220,220,220);
@@ -364,29 +364,28 @@ header {
 
 #blog {
 	width: 100%;
+	height:auto;
 	padding: 7.5% 0 7.5% 0;
 	background-color: #F8F8F8;
+
 }
 
-.blog {
-	margin: 0 auto;
+.filterContainer, .blogContainer {
 	width: 70%;
+	position: relative;
+	height:auto;
+	overflow:auto;
+	margin: 5% auto;
 }
+	.post {
+		position: relative;
+		margin: 1.5%;
+    	font-weight: lighter;
+    	background-size: cover;
+    	background-position: center center;
+		border-radius: 10px;
 
-.post {
-    width: 30%;
-    margin: 1.5%;
-    font-weight: lighter;
-    background-size: cover;
-    background-position: center center;
-	border-radius: 10px;
-
-	-webkit-transition-duration: opacity 0.8s ease;
-	-moz-transition-duration: opacity 0.8s ease;
-	-ms-transition-duration: opacity 0.8s ease;
-	-o-transition-duration: opacity 0.8s ease;
-	transition-duration: opacity 0.8s ease;
-}
+	}
 
 	.post:hover {
 		opacity: 0.5;
@@ -425,6 +424,60 @@ header {
 .cultural {background-image: url('../images/cultural.png')}
 
 .project {background-image: url('../images/project.png')}
+
+
+
+
+
+
+
+
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+
+@media all and (min-width:1025px) {
+	.post {
+		width:30%;
+	}
+}
+@media all and (min-width:769px) and (max-width:1024px) {
+	.post {
+		width:47%;
+	}
+	.one-third {
+		width:28%;
+	}
+	.two-third {
+		width:50%;
+	}
+}
+@media all and (max-width:768px) {
+	.post {
+		width:100%;
+	}
+	.one-third {
+		display:none;
+	}
+	.circle-photo {
+		display:none;
+	}
+	.two-third {
+		width:100%;
+		border:none;
+	}
+}
+
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+
+
+
+
+
 
 
 
