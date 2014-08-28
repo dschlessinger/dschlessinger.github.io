@@ -681,7 +681,7 @@ header {
 	.photo {
 		width: 100%;
 		display: block;
-		border-radius: 50%;
+		border-radius: 5%;
 	}
 	.description {
 		width:100%;
