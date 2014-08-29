@@ -1,4 +1,28 @@
 /* =========================================== */
+/* FONTS */
+/* =========================================== */
+@font-face {
+font-family: CanterOutline;
+src: url("../fonts/canter/CanterOutline.otf") format("opentype");
+}
+
+@font-face {
+font-family: CanterBold3D;
+src: url("../fonts/canter/CanterBold3D.otf") format("opentype");
+}
+
+@font-face {
+font-family: SIFONN_BASIC;
+src: url("../fonts/sifonn/SIFONN_BASIC.otf") format("opentype");
+}
+
+@font-face {
+font-family: SIFONN_BASIC_OUTLINE;
+src: url("../fonts/sifonn/SIFONN_BASIC_OUTLINE.otf") format("opentype");
+}
+
+
+/* =========================================== */
 /* GENERAL */
 /* =========================================== */
 
@@ -62,7 +86,7 @@
 /* =========================================== */
 
 header {
-	font-family: Josefin Sans;
+	/*font-family: Josefin Sans;*/
 	top: 0;
 	left: 0;
 	margin: 0;
@@ -75,21 +99,21 @@ header {
 	z-index: 1000;
 }
 
-
 	header a:visited {
 		text-decoration: none;
 		color: white;
 	}
 
 	header h1 {
-		font-family: Josefin Sans;
-		font-size: 2.5em;
+		font-family: SIFONN_BASIC_OUTLINE;
+		font-size: 3em;
 		margin-left: 10px;
 		margin-top: 8px;
 		float: left;
 		text-decoration: none;
 		border-right: 1 solid gray;
-		color: white;
+		color: gray;
+		font-weight: lighter;
 
 		-webkit-transition: font-size 0.1s ease;
 		-moz-transition: font-size 0.1s ease;
