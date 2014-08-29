@@ -2,22 +2,22 @@
 /* FONTS */
 /* =========================================== */
 @font-face {
-font-family: CanterOutline;
+font-family: "CanterOutline";
 src: url("../fonts/canter/CanterOutline.otf") format("opentype");
 }
 
 @font-face {
-font-family: CanterBold3D;
+font-family: "CanterBold3D";
 src: url("../fonts/canter/CanterBold3D.otf") format("opentype");
 }
 
 @font-face {
-font-family: SIFONN_BASIC;
+font-family: "SIFONN_BASIC";
 src: url("../fonts/sifonn/SIFONN_BASIC.otf") format("opentype");
 }
 
 @font-face {
-font-family: SIFONN_BASIC_OUTLINE;
+font-family: "SIFONN_BASIC_OUTLINE";
 src: url("../fonts/sifonn/SIFONN_BASIC_OUTLINE.otf") format("opentype");
 }
 
@@ -86,7 +86,6 @@ src: url("../fonts/sifonn/SIFONN_BASIC_OUTLINE.otf") format("opentype");
 /* =========================================== */
 
 header {
-	/*font-family: Josefin Sans;*/
 	top: 0;
 	left: 0;
 	margin: 0;
@@ -108,13 +107,14 @@ header {
 		font-family: SIFONN_BASIC_OUTLINE;
 		font-size: 3em;
 		margin-left: 10px;
-		margin-top: 8px;
+		margin-top: 12px;
 		float: left;
 		text-decoration: none;
 		border-right: 1 solid gray;
 		color: gray;
-		font-weight: lighter;
+		/*font-weight: lighter;*/
 
+		-webkit-font-smoothing: antialiased;
 		-webkit-transition: font-size 0.1s ease;
 		-moz-transition: font-size 0.1s ease;
 		-o-transition: font-size 0.1s ease;
@@ -146,20 +146,22 @@ header {
 		}
 
 	header h3 {
+		font-family: Josefin Sans;
 		display: block;
 		margin-right: 20px;
-		margin-top: 18px;
+		margin-top: 24px;
 		float: right;
 		text-decoration: none;
 		color: white;
 
+/*		-webkit-font-smoothing: subpixel-antialiased;
 		-webkit-transition: all 0.1s ease;
 		-moz-transition: all 0.1s ease;
 		-o-transition: all 0.1s ease;
 		-ms-transition: all 0.1s ease;
 		z-index: 9999
 		top: 0
-		position: fixed
+		position: fixed*/
 	}
 
 		header h3 a {
@@ -177,11 +179,14 @@ header {
 		}
 
 		header.shrink h3{
+			font-family: Josefin Sans;
 			margin-top: 14px;
-			-webkit-transition: scale (0.6);
-			-moz-transition: scale (0.6);
-			-o-transition: scale (0.6);
-			-ms-transition: scale (0.6);
+
+			-webkit-font-smoothing: subpixel-antialiased;
+			-webkit-transition: scale (0.6) 0.1s ease;
+			-moz-transition: scale (0.6) 0.1s ease;
+			-o-transition: scale (0.6) 0.1s ease;
+			-ms-transition: scale (0.6) 0.1s ease;
 			z-index: 9999
 			top: 0
 			position: fixed
