@@ -112,7 +112,7 @@ header {
 		text-decoration: none;
 		border-right: 1 solid gray;
 		color: gray;
-		/*font-weight: lighter;*/
+		font-weight: lighter;
 
 		-webkit-font-smoothing: antialiased;
 		-webkit-transition: font-size 0.1s ease;
