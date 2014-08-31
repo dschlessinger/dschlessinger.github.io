@@ -722,6 +722,9 @@ header {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.article {
+		width: 100%;
+	}
 }
 
 /* iPads */
@@ -744,9 +747,6 @@ header {
 		padding:20px 0;
 		border-top:1px solid rgb(220,220,220);
 		border-bottom:1px solid rgb(220,220,220);
-	}
-	.article {
-		width: 100%;
 	}
 }
 
