@@ -722,7 +722,7 @@ header {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.article {
+	article {
 		width: 100%;
 	}
 }
