@@ -60,17 +60,3 @@ $.fn.scrollFun = function () {
 		}
 	});
 };
-
-$('.scroll').scrollFun();
-
-	$(document).on("scroll", function(){
-		if($(document).scrollTop() > 80){
-			$("header").addClass("shrink");
-			updateSliderMargin();
-		}
-		else
-		{
-			$("header").removeClass("shrink");
-			updateSliderMargin();
-		}
-	});
