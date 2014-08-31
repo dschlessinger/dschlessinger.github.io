@@ -33,7 +33,6 @@ src: url("../fonts/sifonn/SIFONN_BASIC_OUTLINE.otf") format("opentype");
 		font: 200 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	    font-weight: 200;
 	    letter-spacing: 0px;
-	    color: #444;
 	}
 
 	pre {
@@ -119,6 +118,10 @@ header {
 		-moz-transition: all 0.1s ease;
 		-o-transition: all 0.1s ease;
 		-ms-transition: all 0.1s ease;
+		/*-webkit-transition: font-size 0.1s ease;
+		-moz-transition: font-size 0.1s ease;
+		-o-transition: font-size 0.1s ease;
+		-ms-transition: font-size 0.1s ease;*/
 		z-index: 9999
 		top: 0
 		position: fixed
@@ -132,6 +135,10 @@ header {
 		-moz-transition: all 0.1s ease;
 		-o-transition: all 0.1s ease;
 		-ms-transition: all 0.1s ease;
+		/*-webkit-transition: scale (0.6);
+		-moz-transition: scale (0.6);
+		-o-transition: scale (0.6);
+		-ms-transition: scale (0.6);*/
 		z-index: 9999
 		top: 0
 		position: fixed
@@ -155,6 +162,15 @@ header {
 		float: right;
 		text-decoration: none;
 		color: white;
+
+/*		-webkit-font-smoothing: subpixel-antialiased;
+		-webkit-transition: all 0.1s ease;
+		-moz-transition: all 0.1s ease;
+		-o-transition: all 0.1s ease;
+		-ms-transition: all 0.1s ease;
+		z-index: 9999
+		top: 0
+		position: fixed*/
 	}
 
 		header h3 a {
@@ -566,7 +582,6 @@ header {
 		margin-right: auto;
 		margin-left: auto;
 		display: block;
-		color: #444;
 		}
 
 		section h1 a:visited {
@@ -578,16 +593,11 @@ header {
 		margin: 3.5% auto 5% auto;
 		padding-top: 7.5%;
 		display: block;
-		color: #444;
 		}
 
 		article h1 {
-			font-family:; "futura-pt","Helvetica Neue",Arial,sans-serif;
-			text-transform: uppercase;
-			font-size: 3em;
+			font-size: 2em;
 			padding-bottom: 3px;
-			font-weight: 800;
-			line-height: 0.8em;
 		}
 
 		article h2 {
@@ -600,11 +610,7 @@ header {
 		}
 
 		article p {
-			font-family: Georgia, Times New Roman, Times, serif;
-			color: #444;
-			line-height: 1.5em;
-			font-size: 2em;
-			padding-bottom: 20px;
+			padding: 10px 0 10px 0;
 		}
 
 		article iframe {
