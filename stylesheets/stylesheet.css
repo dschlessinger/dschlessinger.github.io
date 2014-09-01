@@ -949,7 +949,7 @@ header {
 	header h3 {
 		display: none;
 	}
-	.section, .article {
+	section, article {
 		width: 85%;
 	}
 }
