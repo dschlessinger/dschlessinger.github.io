@@ -889,14 +889,14 @@ header {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.section, .article {
+	section, article {
 		width: 85%;
 	}
-	.header h1 {
+	header h1 {
 		text-align: center;
 		width: 100%;
 	}
-	.header h3 {
+	header h3 {
 		display: none;
 	}
 }
@@ -924,23 +924,7 @@ header {
 	}
 }
 
-@media only screen and (max-width:670px) {
-	header h1 {
-		text-align: center;
-		width: 100%;
-	}
-
-	header h3 {
-		display: none;
-	}
-
-	.header-links {
-		text-align: center;
-		margin: 0.5em auto;
-	}
-	}
-
-@media screen and (device-aspect-ratio: 40/71) {
+/*@media screen and (device-aspect-ratio: 40/71) {
 	header h1 {
 		text-align: center;
 		width: 100%;
@@ -952,7 +936,7 @@ header {
 	section, article {
 		width: 85%;
 	}
-}
+}*/
 
 /* Other Screens */
 @media only screen and (min-width:1024px) {
