@@ -26,107 +26,11 @@
 
 		<article id="top">
 			<h1 class="center"><a href="../index.html#blog">Technical Blog</a>: Week 7</h1>
-			<h2 class="center">Inheritance vs. Composition<h2>
+			<h2 class="center">SQL vs. NoSQL<h2>
 			<h3 class="center"><i>August 31, 2014</i></h3>
 			<hr class="shorthr">
 			<br>
-			<p>Although Ruby's built in classes have a lot of built in functionality, we need the ability to model real life events and objects with their own properties. It's only natural, then, that we can create categories of real life objects called Ruby <em>classes</em>, and instantiate them with examples. Remember <b>D.R.Y.</b> - <b>D</b>on't <b>R</b>epeat <b>Y</b>ourself. So if we're going to be using the same object functionality more than once, it's probably a good idea to just make a class for it. Let's say we wanted to model your happiness throughout the day based on hunger and sleep:</p>
-
-			<div class="code">
-<pre class="prettyprint">
-class Person
-
-	def initialize
-		puts "How many hours of sleep did you get last night? "
-		@hours = gets.chomp
-
-		puts "Did you eat breakfast? "
-		@breakfast = gets.chomp
-	end
-
-end
-
-Daniel = Person.new
-</pre>
-			</div>
-
-			<p>You first would define an initialize method as above. I chose to use the gets method to ask for user input, but you could easily supply the initialize function with arguments and then call them like so:</p>
-
-
-			<div class="code">
-<pre class="prettyprint">
-class Person
-
-	def initialize(hours, breakfast)
-		@hours = hours
-		@breakfast = breakfast
-	end
-
-end
-
-Daniel = Person.new(8, "no")
-</pre>
-			</div>
-
-			<p>Now imagine we add some methods to the class. We can use the private method to make the methods called within the happiness method invisible to the user. Breaking up the emotion and suggestion method make code easier to edit and read if we need to modify it in the future. Here is our final result:</p>
-
-			<div class="code">
-<pre class="prettyprint">
-class Person
-
-	def initialize
-		puts "What's your name?"
-		@name = gets.chomp
-
-		puts "How many hours of sleep did you get last night? "
-		@hours = gets.chomp
-
-		puts "Did you eat breakfast? "
-		@breakfast = gets.chomp
-	end
-
-	def happiness
-		statement
-	end
-
-	private # Everything after this line will be inaccessible to the user but accessible to the happiness method.
-
-	def statement
-		@name = name.capitalize
-		@hours = @hours.to_i
-		@breakfast = @breakfast.downcase
-
-		if (@hours >= 8 && @breakfast == "yes")
-			@emotion = "happy"
-			@suggestion = "Keep up the good work!"
-		if (@hours >= 8 && @breakfast == "no")
-			@emotion = "hungry but well-rested"
-			@suggestion = "Try eating breakfast tomorrow!"
-		if (@hours < 8 && @breakfast == "yes")
-			@emotion = "sleepy - but at least you had breakfast"
-			@suggestion = "Try getting at least #{8-@hours} more hours of sleep tomorrow!"
-		if (@hours < 8 && @breakfast == "no")
-			@emotion = "angry"
-			@suggestion = "Try eating breakfast and getting at least #{8-@hours} more hour(s) of sleep tomorrow!"
-
-		print "I bet you're feeling #{@emotion} today, #{name}! #{@suggestion}"
-	end
-
-end
-
-Daniel = Person.new
-	# => What's your name?
-		# => daniel
-	# => How many hours of sleep did you get last night?
-		# => 7
-	# => Did you eat breakfast?
-		# => yes
-
-Daniel.happiness
-	# => I bet you're feeling sleepy - but at least you had breakfast today! Try getting at least 1 more hour(s) of sleep tomorrow!
-</pre>
-			</div>
-
+			<p>This blog post will be short, but sweet. </p>
 			<br>
 			<hr class="shorthr">
 		</article>

@@ -385,11 +385,11 @@ header {
 	.post:hover {
 		opacity: 0.5;
 
-		-webkit-transition-duration: opacity 0.8s ease;
-	    -moz-transition-duration: opacity 0.8s ease;
-	    -ms-transition-duration: opacity 0.8s ease;
-	    -o-transition-duration: opacity 0.8s ease;
-	    transition-duration: opacity 0.8s ease;
+		-webkit-transition-duration: 0.4s ease;
+	       -moz-transition-duration: 0.4s ease;
+	        -ms-transition-duration: 0.4s ease;
+	         -o-transition-duration: 0.4s ease;
+	            transition-duration: 0.4s ease;
 	}
 
   	.post a, .post p, .post h4 {
