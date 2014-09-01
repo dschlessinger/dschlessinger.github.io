@@ -941,8 +941,16 @@ header {
 	}
 
 @media screen and (device-aspect-ratio: 40/71) {
+	header h1 {
+		text-align: center;
+		width: 100%;
+	}
+
 	header h3 {
 		display: none;
+	}
+	.section, .article {
+		width: 85%;
 	}
 }
 
