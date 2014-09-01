@@ -869,7 +869,7 @@ header {
 /* =========================================== */
 
 /* iPhones */
-@media only screen and ((device-aspect-ratio: 40/71) or (device-aspect-ratio: 2/3)){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	.post {
 		width:96%;
 		margin-bottom: 5%;
@@ -924,7 +924,7 @@ header {
 	}
 }
 
-@media only screen and (device-aspect-ratio: 3/4) {
+@media only screen and (max-width:670px) {
 	header h1 {
 		text-align: center;
 		width: 100%;
