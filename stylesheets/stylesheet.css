@@ -68,6 +68,7 @@ src: url("../fonts/sifonn/SIFONN_BASIC_OUTLINE.otf") format("opentype");
 		}
 
 	.stickfigure {
+		background: white;
 		display: block;
 		max-width: 25%;
 		border-color: black;
@@ -469,20 +470,20 @@ header {
 	outsidecolumn {
 		display: inline-block;
 		width: 26%;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin: 0% 5% 4% 5%;
 		vertical-align: top;
 		}
 
 		outsidecolumn h2 {
 			text-align: center;
 			background-color: #3399FF;
-			color: yellow;
+			color: white;
 			padding: 0% 1%;
 			width: 100%;
 			border-style: solid;
 			border-color: black;
 			border-radius: 17px;
+			margin-bottom: 4%;
 			}
 
 		outsidecolumn li {
@@ -506,12 +507,13 @@ header {
 		middlecolumn h2 {
 			text-align: center;
 			background-color: #3399FF;
-			color: yellow;
+			color: white;
 			padding: 0% 1%;
 			width: 100%;
 			border-style: solid;
 			border-color: black;
 			border-radius: 17px;
+			margin-bottom: 4%;
 			}
 
 		middlecolumn li {
@@ -537,7 +539,7 @@ header {
 	singlecolumn h2 {
 		text-align: center;
 		background-color: #3399FF;
-		color: yellow;
+		color: white;
 		padding: 0% 1%;
 		width: 100%;
 		border-style: solid;
@@ -579,8 +581,72 @@ header {
 		display: block;
 		}
 
-		section h1 a:visited {
+		section h1, h2, h3 {
+			font-family: Lato;
+			font-weight: 300;
+			color: #444;
+		}
+
+		section h1 {
+			font-size: 3em;
+			padding-bottom: 3px;
+		}
+
+			section h1 a {
+				text-transform: uppercase;
+				text-decoration: none;
+				color: black;
+				padding: 0 3px;
+				border: 2px solid #3399FF;
+				border-radius: 5px;
+			}
+
+			section h1 a:visited {
+				text-decoration: none;
+				color: black;
+			}
+
+			section h1 a:hover {
+				color: white; !important;
+				background: #3399FF;
+				border-radius: 5px;
+
+				 -webkit-transition-duration: 0.4s;
+					-moz-transition-duration: 0.4s;
+					 -ms-transition-duration: 0.4s;
+					  -o-transition-duration: 0.4s;
+					     transition-duration: 0.4s;
+			}
+
+		section h2 {
+			font-size: 2em;
+			padding-bottom: 3px;
+		}
+
+		section h3 {
+			font-style: italic
+		}
+
+		section p {
+			font-size: 1.5em;
+			padding: 10px 0 10px 0;
+			line-height: 1.5em;
+			color: #444;
+		}
+
+		section iframe {
+			margin-left:auto;
+			margin-right:auto;
+			display:block
+		}
+
+			section ol li a:visited, section ul li a:visited {
 				color: blue;
+				text-decoration: none;
+			}
+
+			section ol li, article ul li {
+				padding-bottom: 1em;
 			}
 
 	article {
