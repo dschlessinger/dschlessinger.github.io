@@ -903,6 +903,7 @@ header {
 	header h1 {
 		text-align: center;
 		width: 100%;
+		font-size: 4em;
 	}
 	header h3 {
 		display: none;
