@@ -930,6 +930,10 @@ header {
 		width: 100%;
 	}
 
+	header h3 {
+		display: none;
+	}
+
 	.header-links {
 		text-align: center;
 		margin: 0.5em auto;
