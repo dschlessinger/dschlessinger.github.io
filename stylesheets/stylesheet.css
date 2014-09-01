@@ -889,6 +889,16 @@ header {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.section, .article {
+		width: 85%;
+	}
+	.header h1 {
+		text-align: center;
+		width: 100%;
+	}
+	.header h3 {
+		display: none;
+	}
 }
 
 /* iPads */
