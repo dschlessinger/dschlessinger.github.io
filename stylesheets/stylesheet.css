@@ -870,6 +870,9 @@ header {
 
 /* iPhones */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.blogContainer {
+		width: 90%;
+	}
 	.post {
 		width:96%;
 		margin-bottom: 5%;
@@ -888,6 +891,7 @@ header {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 1.5em;
 	}
 	section, article {
 		width: 85%;
@@ -923,20 +927,6 @@ header {
 		border-bottom:1px solid rgb(220,220,220);
 	}
 }
-
-/*@media screen and (device-aspect-ratio: 40/71) {
-	header h1 {
-		text-align: center;
-		width: 100%;
-	}
-
-	header h3 {
-		display: none;
-	}
-	section, article {
-		width: 85%;
-	}
-}*/
 
 /* Other Screens */
 @media only screen and (min-width:1024px) {
