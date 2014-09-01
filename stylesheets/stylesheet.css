@@ -209,6 +209,31 @@ header {
 		list-style-type: initial;
 	}
 
+	.description p a, ul a {
+		text-decoration: none;
+		color: black;
+		padding: 0 3px;
+		border: 1px solid #3399FF;
+		border-radius: 5px;
+	}
+
+	.description p a:visited, ul a:visited {
+		text-decoration: none;
+		color: black;
+	}
+
+	.description p a:hover, ul a:hover {
+		color: white; !important;
+		background: #3399FF;
+		border-radius: 5px;
+
+		 -webkit-transition-duration: 0.4s;
+			-moz-transition-duration: 0.4s;
+			 -ms-transition-duration: 0.4s;
+			  -o-transition-duration: 0.4s;
+			     transition-duration: 0.4s;
+	}
+
 
 
 
@@ -565,13 +590,45 @@ header {
 		display: block;
 		}
 
+		article h1, h2, h3 {
+			font-family: Lato;
+			font-weight: 300;
+			color: #444;
+		}
+
 		article h1 {
-			font-size: 2em;
+			font-size: 3em;
 			padding-bottom: 3px;
 		}
 
+			article h1 a {
+				text-transform: uppercase;
+				text-decoration: none;
+				color: black;
+				padding: 0 3px;
+				border: 2px solid #3399FF;
+				border-radius: 5px;
+			}
+
+			article h1 a:visited {
+				text-decoration: none;
+				color: black;
+			}
+
+			article h1 a:hover {
+				color: white; !important;
+				background: #3399FF;
+				border-radius: 5px;
+
+				 -webkit-transition-duration: 0.4s;
+					-moz-transition-duration: 0.4s;
+					 -ms-transition-duration: 0.4s;
+					  -o-transition-duration: 0.4s;
+					     transition-duration: 0.4s;
+			}
+
 		article h2 {
-			font-size: 1.5em;
+			font-size: 2em;
 			padding-bottom: 3px;
 		}
 
@@ -580,7 +637,10 @@ header {
 		}
 
 		article p {
+			font-size: 1.5em;
 			padding: 10px 0 10px 0;
+			line-height: 1.5em;
+			color: #444;
 		}
 
 		article iframe {
@@ -655,6 +715,7 @@ header {
 		.social li a {
 			display: block;
 			width: 50px;
+			border-color: white;
 			}
 
 #copyright {
