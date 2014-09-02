@@ -808,19 +808,19 @@ header {
 
 .fa-envelope-square, .fa-linkedin-square, .fa-github-square, .fa-google-plus-square, .fa-facebook-square, .fa-twitter-square, .fa-instagram-square {
 	color: black;
-	padding: 5px 8px 4px 8px;
+	padding: 0;
 }
 
 .fa-envelope-square:hover, .fa-linkedin-square:hover, .fa-github-square:hover, .fa-google-plus-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram-square:hover  {
-	color: white;
-	background-color: #3399FF;
+	color: #3399FF;
+	background-color: white;
 	border-radius: 10px;
 
-	 -webkit-transition-duration: 0.4s;
-		-moz-transition-duration: 0.4s;
-		 -ms-transition-duration: 0.4s;
-		  -o-transition-duration: 0.4s;
-		     transition-duration: 0.4s;
+	 -webkit-transition-duration: 0.2s;
+		-moz-transition-duration: 0.2s;
+		 -ms-transition-duration: 0.2s;
+		  -o-transition-duration: 0.2s;
+		     transition-duration: 0.2s;
 }
 
 #copyright {
