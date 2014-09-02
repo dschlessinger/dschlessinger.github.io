@@ -606,7 +606,7 @@ header {
 			border-radius: 5px;
 		}
 
-			section p a, section ul a, section ol a {
+			section h2 a, section p a, section ul a, section ol a {
 				text-decoration: none;
 				color: black;
 				padding: 0 3px;
@@ -614,12 +614,12 @@ header {
 				border-radius: 5px;
 			}
 
-			section h1 a:visited, section p a:visited, section ul a:visited, section ol a:visited {
+			section h1 a:visited, section h2 a:visited, section p a:visited, section ul a:visited, section ol a:visited {
 				text-decoration: none;
 				color: black;
 			}
 
-			section h1 a:hover, section p a:hover, section ul a:hover, section ol a:hover {
+			section h1 a:hover, section h2 a:hover, section p a:hover, section ul a:hover, section ol a:hover {
 				color: white; !important;
 				background: #3399FF;
 				border-radius: 5px;
@@ -642,7 +642,7 @@ header {
 
 		section p {
 			font-size: 1.5em;
-			padding: 10px 0 10px 0;
+			padding: 0 0 0 0;
 			line-height: 1.5em;
 			color: #444;
 			margin-top: 40px;
@@ -664,6 +664,10 @@ header {
 				line-height: 1.5em;
 				margin-left: 60px;
 			}
+
+		section img {
+			margin: 1em auto;
+		}
 
 	article {
 		font-family: Lato;
@@ -693,7 +697,7 @@ header {
 			border-radius: 5px;
 		}
 
-			article h1 a, article p a, article ul a, article ol a {
+			article h1 a, article h2 a, article p a, article ul a, article ol a {
 				text-decoration: none;
 				color: black;
 				padding: 0 3px;
@@ -701,12 +705,12 @@ header {
 				border-radius: 5px;
 			}
 
-			article h1 a:visited, article p a:visited, article ul a:visited, article ol a:visited {
+			article h1 a:visited, article h2 a:visited, article p a:visited, article ul a:visited, article ol a:visited {
 				text-decoration: none;
 				color: black;
 			}
 
-			article h1 a:hover, article p a:hover, article ul a:hover, article ol a:hover {
+			article h1 a:hover, article h2 a:hover, article p a:hover, article ul a:hover, article ol a:hover {
 				color: white; !important;
 				background: #3399FF;
 				border-radius: 5px;
@@ -729,7 +733,7 @@ header {
 
 		article p {
 			font-size: 1.5em;
-			padding: 10px 0 10px 0;
+			padding: 0
 			line-height: 1.5em;
 			color: #444;
 			margin-top: 40px;
@@ -752,21 +756,19 @@ header {
 				margin-left: 60px;
 			}
 
-
-
 	.imgcenter {
 		vertical-align: middle;
 		width: 500px;
 		display: block;
 		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 2em auto;
 		}
 
 	.imgs {
 		width: 100%;
 		position: relative;
 		text-align: center;
+		margin: 2em auto;
 		}
 
 	.img1 {
