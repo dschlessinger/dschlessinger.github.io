@@ -836,29 +836,6 @@ header {
 		background-color: white;
 	}
 
-
-.arrow_down {
-	display: block;
-	width: 100%;
-	background: white;
-	padding-bottom: 2%;
-}
-
-.arrow_up {
-	display: block;
-	width: 100%;
-	background: #F8F8F8;
-	padding-bottom: 2%;
-}
-
-	.arrow_down a, .arrow_up a {
-		color: black;
-	}
-
-	.arrow_down a:visited, .arrow_up a:visited {
-		color: black;
-	}
-
 .fa-angle-down {
 	width: 80px;
 }
