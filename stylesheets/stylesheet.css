@@ -788,7 +788,7 @@ header {
 /* =========================================== */
 
 #contact {
-	padding: 2.5% 0 2.5% 11%;
+	padding: 2.5% 0 2.5% 5%;
 	background-color: white;
 	}
 
@@ -803,15 +803,15 @@ header {
 	.social li {
 		text-align: center;
 		float: left;
-		width: 14.5%;
+		width: 13.5%;
 		}
 
-.fa-envelope-square, .fa-linkedin-square, .fa-github-square, .fa-google-plus-square, .fa-facebook-square, .fa-twitter-square, .fa-instagram-square {
+.fa-envelope-square, .fa-linkedin-square, .fa-github-square, .fa-google-plus-square, .fa-facebook-square, .fa-twitter-square, .fa-instagram {
 	color: black;
 	padding: 0;
 }
 
-.fa-envelope-square:hover, .fa-linkedin-square:hover, .fa-github-square:hover, .fa-google-plus-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram-square:hover  {
+.fa-envelope-square:hover, .fa-linkedin-square:hover, .fa-github-square:hover, .fa-google-plus-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram:hover  {
 	color: #3399FF;
 	background-color: white;
 	border-radius: 10px;
