@@ -812,8 +812,8 @@ header {
 }
 
 .fa-envelope-square:hover, .fa-linkedin-square:hover, .fa-github-square:hover, .fa-google-plus-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram-square:hover  {
-	color: #3399FF;
-	background-color: white;
+	color: white;
+	background-color: #3399FF;
 	border-radius: 10px;
 
 	 -webkit-transition-duration: 0.2s;
