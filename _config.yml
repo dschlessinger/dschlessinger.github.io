@@ -6,7 +6,7 @@
 name: Daniel Schlessinger
 
 # Short bio or description (displayed in the header)
-description: Medical Student| Programmer | Yoga Instructor
+description: Medical Student | Programmer | Yoga Instructor
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -19,7 +19,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email: schlessinger.daniel@gmail.com
-  facebook: dschlessinger
+  facebook: schlessinger.daniel
   flickr:
   github: dschlessinger
   instagram: djdschless
